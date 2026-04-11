@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500;
+  }
+  
+  .nav-link {
+    @apply px-4 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-lg 
+           hover:from-blue-700 hover:to-cyan-600 transition-all duration-200 
+           shadow-lg hover:shadow-xl font-semibold;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg
+           hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 font-semibold;
+  }
+
+  .btn-ghost {
+    @apply px-6 py-3 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 
+           transition-all duration-200 font-semibold rounded-lg;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-6 gradient-text;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 
+           hover:shadow-xl transition-shadow duration-200;
+  }
+
+  /* Premium animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Enhanced hover effects */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Enhanced card hover effects */
+  .card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Smooth scroll behavior */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .section-title {
+      @apply text-3xl md:text-4xl;
+    }
+    
+    .card {
+      @apply p-4;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(600%);
+  }
+}
+
+.animate-scan {
+  animation: scan 4s ease-in-out infinite;
+}
