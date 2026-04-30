@@ -80,7 +80,6 @@ const Footer = () => {
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Strategy & Architecture</a></li>
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Platform Engineering & DevOps</a></li>
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI Strategy & Implementation</a></li>
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Digital Transformation</a></li>
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Product Engineering</a></li>
             </ul>
           </div>

@@ -7,100 +7,68 @@ const Portfolio = () => {
 
   const portfolioHighlights = [
     {
-      title: 'Cloud Architecture & Migration',
+      title: 'Cloud Architecture Modernization',
       category: 'Cloud Infrastructure',
-      description: 'Migrated legacy infrastructure to modern cloud architecture, improving scalability and reducing operational overhead.',
+      description: 'Multi-phase cloud infrastructure migration for a SaaS platform, transitioning from on-premise data centers to scalable cloud infrastructure. Included architecture design, security implementation, and cost optimization.',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
       icon: Cloud,
-      outcomes: ['60% Cost Reduction', '99.9% Uptime', '3x Performance']
+      outcomes: ['45% Cost Reduction', '99.9% Uptime', '2x Performance']
     },
     {
-      title: 'AI Process Automation',
+      title: 'Intelligent Workflow Automation',
       category: 'Intelligent Systems',
-      description: 'Implemented intelligent workflow automation that streamlined operations and eliminated manual tasks across departments.',
+      description: 'AI-powered process automation implementation for financial services, eliminating manual data processing across operations and compliance workflows. Reduced processing time while maintaining audit compliance.',
       image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
       icon: Bot,
-      outcomes: ['70% Time Savings', '95% Accuracy', '24/7 Operations']
+      outcomes: ['55% Time Savings', '98% Accuracy', 'Compliance Maintained']
     },
     {
-      title: 'Data Analytics Dashboard',
-      category: 'Strategy & Analytics',
-      description: 'Built comprehensive analytics platform providing real-time insights into business performance and operational metrics.',
+      title: 'Analytics & Business Intelligence Platform',
+      category: 'Intelligent Systems',
+      description: 'Built unified analytics platform integrating data from multiple sources, providing real-time dashboards for operational and strategic decision-making across the organization.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
       icon: BarChart,
-      outcomes: ['Real-time Insights', '90% Faster Reporting', 'Executive Dashboards']
+      outcomes: ['Real-time Insights', '75% Faster Analysis', 'Data-Driven Decisions']
     },
     {
-      title: 'Client Portal Development',
-      category: 'Experience Engineering',
-      description: 'Developed intuitive client portal with modern interface design, improving user engagement and operational efficiency.',
+      title: 'Client Portal & Product Platform',
+      category: 'Digital Products',
+      description: 'Designed and developed customer-facing portal with intuitive interface and self-service capabilities. Modern architecture supports scaling for millions of users across multiple markets.',
       image: 'https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=800&q=80',
       icon: Monitor,
-      outcomes: ['85% User Adoption', '4.8/5 Rating', '50% Faster Tasks']
+      outcomes: ['80% User Adoption', '4.7/5 Rating', '40% Task Efficiency']
     },
     {
-      title: 'DevOps Pipeline Implementation',
+      title: 'CI/CD Platform & DevOps Excellence',
       category: 'Cloud Infrastructure',
-      description: 'Established automated CI/CD pipelines and infrastructure as code, accelerating deployment cycles and improving reliability.',
+      description: 'Automated deployment infrastructure with containerization, orchestration, and infrastructure-as-code. Enabled development teams to deploy safely to production multiple times daily.',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
       icon: Zap,
-      outcomes: ['80% Faster Deployments', '95% Fewer Errors', 'Automated Testing']
+      outcomes: ['70% Faster Deployments', '90% Error Reduction', 'Continuous Delivery']
     },
     {
-      title: 'Web Design & Development',
-      category: 'Experience Engineering',
-      description: 'Created high-performance website with modern design and optimized user experience, driving engagement and conversions.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-      icon: Palette,
-      outcomes: ['150% Conversion Increase', '2s Load Time', 'Mobile Optimized']
-    },
-    {
-      title: 'Internal Tools Development',
-      category: 'Experience Engineering',
-      description: 'Built custom internal tools using no-code platforms to streamline business processes and improve team productivity.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
-      icon: Target,
-      outcomes: ['40% Productivity Gain', 'Streamlined Workflows', 'User-Friendly Interface']
-    },
-    {
-      title: 'Enterprise Cloud Migration',
+      title: 'Cloud Cost Optimization Program',
       category: 'Cloud Infrastructure',
-      description: 'Migrated legacy enterprise systems to modern cloud architecture, improving scalability and reducing operational overhead.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-      icon: Cloud,
-      outcomes: ['50% Cost Reduction', '99.9% Uptime', '3x Scalability']
-    },
-    {
-      title: 'AI Process Automation Platform',
-      category: 'Intelligent Systems',
-      description: 'Implemented comprehensive AI-powered automation platform that streamlined operations across multiple departments.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
-      icon: Bot,
-      outcomes: ['60% Time Savings', '24/7 Operations', '95% Accuracy']
-    },
-    {
-      title: 'Executive Analytics Dashboard',
-      category: 'Strategy & Analytics',
-      description: 'Developed comprehensive executive dashboard providing real-time business intelligence and performance metrics.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-      icon: BarChart,
-      outcomes: ['Real-time Insights', '80% Faster Reporting', 'Executive Visibility']
-    },
-    {
-      title: 'Cloud Cost Optimization',
-      category: 'Cloud Infrastructure',
-      description: 'Analyzed and optimized cloud spending through intelligent resource management and automated cost controls.',
+      description: 'Comprehensive cost analysis and optimization strategy for multi-cloud environment. Implemented automated resource management, reserved capacity planning, and usage monitoring.',
       image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
       icon: TrendingUp,
-      outcomes: ['40% Cost Savings', 'Automated Monitoring', 'Performance Maintained']
+      outcomes: ['38% Annual Savings', 'Automated Controls', 'Performance Optimized']
     },
     {
-      title: 'AI Customer Support Implementation',
+      title: 'Intelligent Customer Support System',
       category: 'Intelligent Systems',
-      description: 'Deployed intelligent customer support system providing 24/7 assistance while maintaining high service quality.',
+      description: 'AI-powered support platform providing 24/7 customer assistance with natural language processing. Escalates complex issues to human agents with full context and recommended solutions.',
       image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
       icon: Users,
-      outcomes: ['24/7 Availability', '70% Query Resolution', 'Improved Satisfaction']
+      outcomes: ['24/7 Coverage', '65% Self-Resolution', 'Higher Satisfaction']
+    },
+    {
+      title: 'Digital Product Strategy & Development',
+      category: 'Digital Products',
+      description: 'End-to-end digital product development including market research, product strategy, UX/UI design, and technical implementation. Launched successfully to target market with strong adoption.',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+      icon: Palette,
+      outcomes: ['On-Schedule Launch', 'Strong User Adoption', 'Positive Market Response']
     }
   ];
 
@@ -117,7 +85,7 @@ const Portfolio = () => {
             and digital product transformation.
           </p>
           <p className="text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8">
-            Each project showcases our ability to deliver enterprise-grade solutions that drive measurable business outcomes.
+            Each project demonstrates our ability to deliver high-quality, scalable solutions that drive measurable business outcomes across organizations of all sizes.
           </p>
         </div>
       </section>

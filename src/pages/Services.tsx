@@ -14,11 +14,11 @@ const Services = () => {
       services: [
         {
           name: 'Cloud Strategy, Architecture & Foundation Setup',
-          description: 'We design and implement enterprise cloud strategies and architectures that establish secure, scalable foundations for digital transformation and global operations.'
+          description: 'We design and implement cloud strategies and architectures that establish secure, scalable foundations for digital transformation at any scale.'
         },
         {
           name: 'Platform Engineering & Delivery Automation (DevOps)',
-          description: 'We build automated delivery platforms and DevOps capabilities that accelerate software deployment while maintaining enterprise-grade reliability and security.'
+          description: 'We build automated delivery platforms and DevOps capabilities that accelerate software deployment while maintaining high reliability and security.'
         },
         {
           name: 'Cloud Reliability, SRE & Managed Operations',
@@ -26,7 +26,7 @@ const Services = () => {
         },
         {
           name: 'Cloud Security, Risk & Compliance',
-          description: 'We implement enterprise-grade cloud security frameworks and compliance programs that protect critical assets while meeting regulatory requirements.'
+          description: 'We implement cloud security frameworks and compliance programs that protect critical assets while meeting regulatory requirements.'
         },
         {
           name: 'Cloud Financial Management & Optimization (FinOps)',
@@ -44,12 +44,12 @@ const Services = () => {
       icon: Bot,
       services: [
         {
-          name: 'Generative AI Strategy & Enterprise AI Pilots',
-          description: 'We develop enterprise AI strategies and implement pilot programs that demonstrate measurable business value while ensuring governance and security.'
+          name: 'Generative AI Strategy & AI Pilots',
+          description: 'We develop AI strategies and implement pilot programs that demonstrate measurable business value while ensuring governance and security.'
         },
         {
           name: 'Data Strategy, Governance & Modernization',
-          description: 'We modernize data architectures and establish governance frameworks that enable reliable, secure, and scalable data operations for enterprise decision-making.'
+          description: 'We modernize data architectures and establish governance frameworks that enable reliable, secure, and scalable data operations for strategic decision-making.'
         },
         {
           name: 'Decision Intelligence & Advanced Analytics',
@@ -70,10 +70,6 @@ const Services = () => {
       description: 'Create products your customers love. We design and build digital experiences that drive engagement, conversion, and growth   from vision through launch and beyond.',
       icon: Palette,
       services: [
-        {
-          name: 'Digital Transformation & Product Strategy',
-          description: 'We develop comprehensive digital transformation strategies and product roadmaps that align technology investments with business objectives and market opportunities.'
-        },
         {
           name: 'Digital Product Engineering & Platforms',
           description: 'We build scalable digital products and platforms using modern engineering practices that deliver exceptional performance and user experiences.'
@@ -159,7 +155,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Enterprise Solutions */}
+      {/* Integrated Capabilities */}
       <section className="py-20 px-4 bg-gradient-to-r from-gray-50 to-blue-50/30 dark:from-gray-800 dark:to-blue-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="card bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800">

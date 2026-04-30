@@ -26,7 +26,7 @@ const Contact = () => {
   const faqs = [
     {
       question: 'What types of clients do you work with?',
-      answer: 'We partner with ambitious startups, scale-ups, and enterprises. If your goal is to scale, innovate, or transform   we\'re a fit.'
+      answer: 'We partner with ambitious startups, scale-ups, and established organizations. If your goal is to scale, innovate, or transform  we\'re a fit.'
     },
     {
       question: 'Do you work with clients outside Africa?',
@@ -38,7 +38,7 @@ const Contact = () => {
     },
     {
       question: 'What investment level do you work at?',
-      answer: 'Our projects are built for growth-stage and enterprise-level budgets. If you\'re seeking lowest-cost solutions, we\'re probably not the right fit.'
+      answer: 'Our projects are built for serious budgets and meaningful transformation. If you\'re seeking lowest-cost solutions, we\'re probably not the right fit.'
     },
     {
       question: 'How do we start working together?',
@@ -52,7 +52,7 @@ const Contact = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 via-blue-50/30 to-cyan-50/30 dark:from-gray-900 dark:via-blue-900/20 dark:to-cyan-900/20">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-8">
-            Let's Build the Future,
+            Let's Build the Future
             <span className="gradient-text block mt-2">Together</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -143,13 +143,12 @@ const Contact = () => {
                       <option value="cloud-financial">Cloud Financial Management & Optimization (FinOps)</option>
                     </optgroup>
                     <optgroup label="AI, Data & Intelligent Operations">
-                      <option value="ai-strategy">Generative AI Strategy & Enterprise AI Pilots</option>
+                      <option value="ai-strategy">Generative AI Strategy & AI Pilots</option>
                       <option value="data-strategy">Data Strategy, Governance & Modernization</option>
                       <option value="decision-intelligence">Decision Intelligence & Advanced Analytics</option>
                       <option value="intelligent-automation">Intelligent Process & Workflow Automation (IPA)</option>
                     </optgroup>
                     <optgroup label="Digital Product & Experience Transformation">
-                      <option value="digital-transformation">Digital Transformation & Product Strategy</option>
                       <option value="product-engineering">Digital Product Engineering & Platforms</option>
                       <option value="experience-design">Product Experience & Service Design</option>
                       <option value="low-code">Low-Code, No-Code & Citizen Developer Enablement</option>

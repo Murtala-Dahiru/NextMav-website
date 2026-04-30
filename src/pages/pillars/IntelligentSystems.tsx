@@ -9,7 +9,7 @@ const IntelligentSystems = () => {
     {
       icon: Brain,
       title: 'Generative AI Strategy & AI Pilots',
-      description: 'We develop enterprise AI strategies and implement pilot programs that demonstrate measurable business value. Our approach ensures proper governance and security frameworks from the start.',
+      description: 'We develop AI strategies and implement pilot programs that demonstrate measurable business value. Our approach ensures proper governance and security frameworks from the start.',
       features: [
         'AI strategy development',
         'Pilot program implementation',
@@ -19,7 +19,7 @@ const IntelligentSystems = () => {
     {
       icon: Cpu,
       title: 'Data Infrastructure & Modernization ',
-      description: 'We modernize data architectures and establish governance frameworks that enable reliable, secure data operations. Our solutions support enterprise-scale decision-making and analytics.',
+      description: 'We modernize data architectures and establish governance frameworks that enable reliable, secure data operations. Our solutions support scalable decision-making and analytics.',
       features: [
         'Data Architecture & Platform Design',
         'Data Pipeline Engineering',
@@ -50,22 +50,22 @@ const IntelligentSystems = () => {
 
   const useCases = [
     {
-      title: 'Enterprise AI Implementation',
-      challenge: 'Manual processes limiting operational efficiency and scalability',
-      solution: 'Generative AI strategy with pilot automation programs',
-      outcome: '60% reduction in manual tasks, 300% ROI on initial pilots'
+      title: 'Workflow Automation for Financial Operations',
+      challenge: 'Manual data processing across compliance workflows taking 200+ hours monthly',
+      solution: 'AI-powered process automation with governance and audit trails',
+      outcome: '55% time savings, 98% accuracy, compliance maintained'
     },
     {
-      title: 'Data Analytics Platform',
-      challenge: 'Fragmented data sources preventing strategic decision-making',
-      solution: 'Unified analytics platform with real-time dashboards',
-      outcome: '90% faster insights generation, 95% improvement in data quality'
+      title: 'Business Analytics Platform',
+      challenge: 'Fragmented data preventing strategic decision-making and reporting delays',
+      solution: 'Unified analytics platform with real-time dashboards and self-service insights',
+      outcome: 'Real-time insights, 75% faster analysis, better business decisions'
     },
     {
-      title: 'Workflow Automation System',
-      challenge: 'Complex approval processes causing operational bottlenecks',
-      solution: 'Intelligent workflow automation with AI-powered routing',
-      outcome: '70% faster processing times, 95% reduction in manual errors'
+      title: 'Intelligent Customer Support',
+      challenge: 'High support volume with manual response causing customer frustration',
+      solution: 'AI-powered support system with natural language understanding and escalation',
+      outcome: '24/7 availability, 65% self-resolution, improved satisfaction'
     }
   ];
 
@@ -87,7 +87,7 @@ const IntelligentSystems = () => {
             <span className="gradient-text block mt-2">Strategic AI implementation and data modernization</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-            Strategic AI implementation and data modernization services that transform business operations through intelligent automation and advanced analytics. We embed intelligence into enterprise workflows to drive measurable business outcomes.
+            Strategic AI and data modernization services that transform business operations through intelligent automation and advanced analytics. We embed intelligence into workflows to drive measurable business outcomes.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ const IntelligentSystems = () => {
           <div className="text-center mb-16">
             <h2 className="section-title animate-fade-in-up">Core Services</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              Enterprise AI and data services that enable intelligent operations and strategic decision-making
+              AI and data services that enable intelligent operations and strategic decision-making
             </p>
           </div>
 
@@ -131,7 +131,7 @@ const IntelligentSystems = () => {
             <div className="animate-fade-in-up">
               <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Why AI & Data Intelligence Matter</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Enterprise AI and data modernization represent the next frontier of operational efficiency. Organizations that deploy 
+                AI and data modernization represent the next frontier of operational efficiency. Organizations that deploy 
                 strategic AI systems and modern data platforms achieve measurable productivity gains while reducing operational costs and improving decision-making speed.
               </p>
               <div className="space-y-4">
@@ -151,12 +151,12 @@ const IntelligentSystems = () => {
             <div className="card bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 border-2 border-purple-100 dark:border-purple-800 animate-fade-in-up delay-200">
               <div className="text-center">
                 <Award className="w-16 h-16 text-purple-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4">AI-First Approach</h3>
+                <h3 className="text-2xl font-bold mb-4">AI-Driven Operations</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Our AI and data solutions typically deliver 40-70% efficiency improvements while enabling strategic insights that drive business growth.
                 </p>
                 <p className="text-sm text-purple-600 dark:text-purple-400 font-semibold">
-                  Intelligence that scales with your ambition.
+                  Intelligence that scales with your business.
                 </p>
               </div>
             </div>
@@ -193,7 +193,7 @@ const IntelligentSystems = () => {
               <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Strategic Insights</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Real-time analytics and predictive intelligence that enable data-driven decisions 
-                and strategic planning with enterprise-grade accuracy.
+                and strategic planning with high precision and reliability.
               </p>
             </div>
             
@@ -204,7 +204,7 @@ const IntelligentSystems = () => {
               <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Scalable Intelligence</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 AI systems that grow with your business, handling increased complexity 
-                while maintaining performance and accuracy at enterprise scale.
+                while maintaining performance and accuracy at scale.
               </p>
             </div>
           </div>

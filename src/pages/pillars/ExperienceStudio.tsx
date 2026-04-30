@@ -7,16 +7,6 @@ const ExperienceStudio = () => {
 
   const coreServices = [
     {
-      icon: Palette,
-      title: 'Digital Transformation & Product Strategy',
-      description: 'We develop comprehensive digital transformation strategies and product roadmaps that align technology investments with business objectives. Our approach ensures strategic market positioning and competitive advantage.',
-      features: [
-        'Digital transformation strategy',
-        'Product roadmap development',
-        'Technology investment planning'
-      ]
-    },
-    {
       icon: Monitor,
       title: 'Digital Product Engineering & Platforms',
       description: 'We build scalable digital products and platforms using modern engineering practices that deliver exceptional performance. Our solutions ensure optimal user experiences and technical reliability.',
@@ -50,22 +40,22 @@ const ExperienceStudio = () => {
 
   const useCases = [
     {
-      title: 'Customer Portal Development',
-      challenge: 'Legacy customer interface limiting user engagement and satisfaction',
-      solution: 'Modern web platform with responsive design and microservices architecture',
-      outcome: '180% increase in user engagement, 150% improvement in conversion rates'
+      title: 'Digital Product Development',
+      challenge: 'Outdated product limiting user engagement and market competitiveness',
+      solution: 'End-to-end product development with modern tech stack and user-centered design',
+      outcome: 'Successful launch, strong adoption, positive market response'
     },
     {
-      title: 'Digital Product Strategy',
-      challenge: 'Unclear product direction and technology roadmap',
-      solution: 'Comprehensive product strategy with technology assessment and roadmap',
-      outcome: 'Clear 18-month roadmap, 40% faster feature delivery, improved market positioning'
+      title: 'Customer Portal Redesign',
+      challenge: 'Legacy portal with poor UX causing low adoption and support tickets',
+      solution: 'Modern web platform with intuitive design and self-service capabilities',
+      outcome: '80% adoption rate, 4.7/5 user rating, 40% faster task completion'
     },
     {
       title: 'Low-Code Platform Enablement',
       challenge: 'Development bottlenecks preventing rapid business application creation',
-      solution: 'Enterprise low-code platform with citizen developer training program',
-      outcome: '70% faster application development, 50% reduction in IT backlog'
+      solution: 'Low-code platform implementation with citizen developer enablement program',
+      outcome: '70% faster development, 50% reduction in IT backlog, business agility'
     }
   ];
 

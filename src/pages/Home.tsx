@@ -51,8 +51,8 @@ const Home = () => {
     },
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'SOC 2 Type II compliant with enterprise-grade security standards'
+      title: 'Security & Compliance',
+      description: 'SOC 2 Type II compliant with industry-leading security standards'
     },
     {
       icon: Star,
@@ -169,10 +169,10 @@ const Home = () => {
               {/* Feature highlights - Desktop only */}
               <div className="hidden lg:grid grid-cols-2 gap-4 pt-8">
                 {[
-                  { icon: Cloud, title: 'Cloud Excellence', desc: 'Enterprise architecture' },
+                  { icon: Cloud, title: 'Cloud Excellence', desc: 'Scalable architecture' },
                   { icon: Bot, title: 'AI & Data Intelligence', desc: 'Intelligent operations' },
                   { icon: Palette, title: 'Digital Products', desc: 'Experience transformation' },
-                  { icon: Shield, title: 'Security & Compliance', desc: 'Enterprise-grade' },
+                  { icon: Shield, title: 'Security & Compliance', desc: 'Industry standards' },
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-300">
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -221,7 +221,7 @@ const Home = () => {
               <div className="absolute -bottom-4 -left-4 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 p-4 backdrop-blur-sm hidden lg:block">
                 <div className="flex items-center space-x-2">
                   <Shield className="w-4 h-4 text-blue-500" />
-                  <span className="text-sm font-semibold text-gray-900 dark:text-white">Enterprise Security</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-white">Security & Compliance</span>
                 </div>
               </div>
             </div>
@@ -229,10 +229,10 @@ const Home = () => {
             {/* Mobile feature highlights */}
             <div className="grid grid-cols-2 gap-4 lg:hidden">
               {[
-                { icon: Cloud, title: 'Cloud Excellence', desc: 'Enterprise architecture' },
+                { icon: Cloud, title: 'Cloud Excellence', desc: 'Scalable architecture' },
                 { icon: Bot, title: 'AI & Data Intelligence', desc: 'Intelligent operations' },
                 { icon: Palette, title: 'Digital Products', desc: 'Experience transformation' },
-                { icon: Shield, title: 'Security & Compliance', desc: 'Enterprise-grade' },
+                { icon: Shield, title: 'Security & Compliance', desc: 'Industry standards' },
               ].map((feature, index) => (
                 <div key={index} className="card text-center group hover:shadow-lg transition-all duration-300">
                   <feature.icon className="w-8 h-8 text-blue-600 mx-auto mb-3 transition-transform duration-300" />
@@ -260,8 +260,7 @@ const Home = () => {
               One Intelligent Ecosystem
             </p>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto animate-fade-in-up delay-300">
-              NextMav is built around a set of focused capabilities that address every layer of digital growth from strategy to execution.
-Each operates with deep expertise and autonomy, but together they function as a connected system designed to help businesses move faster, make better decisions, and grow with clarity.
+              We partner with ambitious organizations at every growth stage from startups launching their first product to established companies scaling globally. Our three divisions combine cloud infrastructure, intelligent automation, and digital products to help any organization move faster, compete harder, and grow with confidence.
             </p>
           </div>
 
@@ -270,7 +269,7 @@ Each operates with deep expertise and autonomy, but together they function as a 
               {
                 icon: Cloud, 
                 title: 'Cloud & Infrastructure Excellence',
-                tagline: 'Enterprise cloud strategy, architecture, and operations.',
+                tagline: 'Cloud strategy, architecture, and operations.',
                 description: 'Comprehensive cloud transformation from strategy and architecture to security, reliability, and financial optimization.',
                 services: [
                   'Cloud Strategy, Architecture & Foundation Setup',
@@ -285,10 +284,10 @@ Each operates with deep expertise and autonomy, but together they function as a 
               {
                 icon: Bot,
                 title: 'AI, Data & Intelligent Operations',
-                tagline: 'Enterprise AI strategy and intelligent automation.',
+                tagline: 'AI strategy and intelligent automation.',
                 description: 'Strategic AI implementation, data modernization, advanced analytics, and intelligent process automation for operational excellence.',
                 services: [
-                  'Generative AI Strategy & Enterprise AI Pilots',
+                  'Generative AI Strategy & AI Pilots',
                   'Data Strategy, Governance & Modernization',
                   'Decision Intelligence & Advanced Analytics',
                   'Intelligent Process & Workflow Automation (IPA)'
@@ -302,7 +301,6 @@ Each operates with deep expertise and autonomy, but together they function as a 
                 tagline: 'Digital product strategy and experience engineering.',
                 description: 'End-to-end digital product development from strategy and engineering to experience design and low-code enablement.',
                 services: [
-                  'Digital Transformation & Product Strategy',
                   'Digital Product Engineering & Platforms',
                   'Product Experience & Service Design',
                   'Low-Code, No-Code & Citizen Developer Enablement'
@@ -311,9 +309,8 @@ Each operates with deep expertise and autonomy, but together they function as a 
                 gradient: 'from-pink-500 to-rose-500'
               }
             ].map((pillar, index) => (
-              <div key={index} className="card group hover:scale-105 transition-all duration-300 cursor-pointer hover:shadow-2xl animate-fade-in-up border border-gray-100 dark:border-gray-700" 
-                   style={{animationDelay: `${index * 0.1}s`}}
-                   onClick={() => navigate(pillar.link)}>
+              <div key={index} className="card hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-fade-in-up border border-gray-100 dark:border-gray-700" 
+                   style={{animationDelay: `${index * 0.1}s`}}>
                 <div className={`w-16 h-16 bg-gradient-to-br ${pillar.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <pillar.icon className="w-8 h-8 text-white" />
                 </div>
@@ -328,22 +325,19 @@ Each operates with deep expertise and autonomy, but together they function as a 
                     </div>
                   ))}
                 </div>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    navigate(pillar.link);
-                  }}
-                  className="text-blue-600 dark:text-blue-400 font-semibold hover:underline inline-flex items-center text-sm group"
+                <a
+                  href={`#${pillar.link}`}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 active:scale-95 transition-all duration-200"
                 >
-                  Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
+                  Learn More <ArrowRight className="w-4 h-4 transition-transform duration-200" />
+                </a>
               </div>
             ))}
           </div>
 
           <div className="text-center animate-fade-in-up delay-500">
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              From cloud excellence to intelligent operations and digital product transformation   we deliver enterprise-grade solutions that drive measurable business outcomes.
+              From cloud excellence to intelligent operations and digital product transformation   we deliver high-quality solutions that drive measurable business outcomes.
             </p>
           </div>
         </div>
@@ -355,7 +349,7 @@ Each operates with deep expertise and autonomy, but together they function as a 
           <div className="text-center mb-16">
             <h2 className="section-title">Driven by Systems Engineering, Trusted at Scale</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              NextMav is a technology systems partner focused on transformation. From high-growth startups to established enterprises, we engineer scalable infrastructure, deploy intelligent automation, and enable organizations to operate at their full potential.
+              NextMav is a technology systems partner focused on transformation. From high-growth startups to established organizations, we engineer scalable infrastructure, deploy intelligent automation, and enable organizations to operate at their full potential.
             </p>
           </div>
 
@@ -377,7 +371,7 @@ Each operates with deep expertise and autonomy, but together they function as a 
                   <h3 className="text-3xl font-bold">Our Vision</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-lg">
-                  To be the technology partner that enables organizations to build scalable systems, automate operations, and compete at their highest potential—from ambitious startups to global enterprises.
+                  To be the technology partner that enables organizations to build scalable systems, automate operations, and compete at their highest potential from ambitious startups to global organizations.
                 </p>
               </div>
             </div>
@@ -389,7 +383,7 @@ Each operates with deep expertise and autonomy, but together they function as a 
                 We build systems that operate reliably. We architect infrastructure that enables growth. We deploy automation that transforms how teams work.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We're designed for ambitious organizations: high-growth startups, scaling mid-market companies, and enterprises optimizing operations.
+                We're designed for ambitious organizations: high-growth startups, scaling mid-market companies, and organizations optimizing operations.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 We operate at the intersection of cloud systems, data intelligence, and product engineering, helping companies move from manual processes to autonomous, data-driven operations at any scale.

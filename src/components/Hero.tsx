@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             {[
               { icon: Zap, title: 'AI Automation', desc: 'Smart workflows' },
-              { icon: Shield, title: 'Cloud Security', desc: 'Enterprise-grade' },
+              { icon: Shield, title: 'Cloud Security', desc: 'High security' },
               { icon: TrendingUp, title: 'Growth Marketing', desc: 'Data-driven results' },
               { icon: Users, title: 'Brand Strategy', desc: 'Premium positioning' },
             ].map((feature, index) => (

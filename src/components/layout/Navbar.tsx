@@ -61,7 +61,7 @@ const Navbar = () => {
                       <Cloud className="w-4 h-4 mr-3 text-blue-500" />
                       <div>
                         <div className="font-semibold">Cloud & Infrastructure Excellence</div>
-                        <div className="text-xs text-gray-500">Enterprise cloud architecture</div>
+                        <div className="text-xs text-gray-500">Cloud architecture</div>
                       </div>
                     </div>
                   </button>

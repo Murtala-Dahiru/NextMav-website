@@ -43,8 +43,8 @@ const Partners = () => {
     },
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'SOC 2 Type II compliant with enterprise-grade security standards'
+      title: 'Security & Compliance',
+      description: 'SOC 2 Type II compliant with industry-leading security standards'
     },
     {
       icon: Star,

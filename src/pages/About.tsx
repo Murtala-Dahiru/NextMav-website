@@ -35,13 +35,13 @@ const About = () => {
     {
       icon: Target,
       title: 'Strategic Leadership',
-      description: 'Former executives from top-tier consulting firms and Fortune 500 companies bring enterprise-level strategic thinking to every project.',
+      description: 'Former executives from top-tier consulting firms and Fortune 500 companies bring strategic thinking and deep industry expertise to every project.',
       stats: '5+ Years Average Experience'
     },
     {
       icon: Lightbulb,
       title: 'Product Engineering',
-      description: 'Architects and engineers who have designed and shipped scalable products and platforms for global enterprises and high-growth companies.',
+      description: 'Architects and engineers who have designed and shipped scalable products and platforms for global organizations and high-growth companies.',
       stats: '50+ Deployments'
     },
     {
@@ -55,7 +55,7 @@ const About = () => {
   const globalCapabilities = [
     'Multi-currency and multi-language infrastructure support',
     'Global compliance and security standards',
-    'Enterprise deployment and integration expertise',
+    'Scalable deployment and integration expertise',
     'Operational scaling across distributed markets'
   ];
 
@@ -90,7 +90,7 @@ const About = () => {
                 We believe powerful technology should be purposeful. Every system we architect, every automation we deploy, and every platform we engineer is designed for measurable impact: reduced operational costs, faster deployments, improved reliability, and competitive advantage.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Operating across emerging and established markets, our team combines deep technical expertise with practical understanding of companies at every growth stage. We deliver technology solutions that work in Lagos and London, for startups scaling rapidly and enterprises optimizing operations.
+                Operating across emerging and established markets, our team combines deep technical expertise with practical understanding of companies at every growth stage. We deliver technology solutions that work globally, for startups scaling rapidly and organizations optimizing operations.
               </p>
             </div>
             <div className="card bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800 animate-fade-in-up delay-200 hover-lift">

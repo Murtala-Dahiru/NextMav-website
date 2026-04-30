@@ -5,7 +5,7 @@ const Services = () => {
   const divisions = [
     {
       title: 'NextMav Tech',
-      subtitle: 'Modern tech infrastructure, smart automation, and enterprise-grade performance.',
+      subtitle: 'Modern tech infrastructure, smart automation, and scalable performance.',
       services: [
         {
           icon: Bot,

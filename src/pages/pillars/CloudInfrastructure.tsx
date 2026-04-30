@@ -9,7 +9,7 @@ const CloudInfrastructure = () => {
     {
       icon: Cloud,
       title: 'Cloud Strategy, Architecture & Foundation Setup',
-      description: 'We design and implement enterprise cloud strategies that establish secure, scalable foundations for digital transformation. Our approach ensures optimal architecture design and seamless execution.',
+      description: 'We design and implement cloud strategies that establish secure, scalable foundations for digital transformation. Our approach ensures optimal architecture design and seamless execution.',
       features: [
         'Strategy & assessment',
         'Architecture & design', 
@@ -19,7 +19,7 @@ const CloudInfrastructure = () => {
     {
       icon: Zap,
       title: 'Platform Engineering & Delivery Automation (DevOps)',
-      description: 'We build automated delivery platforms and DevOps capabilities that accelerate software deployment. Our solutions maintain enterprise-grade reliability while reducing deployment complexity.',
+      description: 'We build automated delivery platforms and DevOps capabilities that accelerate software deployment. Our solutions maintain high reliability and security while reducing deployment complexity.',
       features: [
         'CI/CD pipeline design',
         'Infrastructure automation',
@@ -39,7 +39,7 @@ const CloudInfrastructure = () => {
     {
       icon: Shield,
       title: 'Cloud Security, Risk & Compliance',
-      description: 'We implement enterprise-grade cloud security frameworks and compliance programs that protect critical assets. Our approach ensures regulatory compliance while maintaining operational efficiency.',
+      description: 'We implement cloud security frameworks and compliance programs that protect critical assets. Our approach ensures regulatory compliance while maintaining operational efficiency.',
       features: [
         'Security architecture',
         'Compliance frameworks',
@@ -60,22 +60,22 @@ const CloudInfrastructure = () => {
 
   const useCases = [
     {
-      title: 'Multi-Cloud Architecture Implementation',
-      challenge: 'Complex legacy systems requiring modernization and scalability',
-      solution: 'Comprehensive cloud strategy with AWS and Azure integration',
-      outcome: '50% infrastructure cost reduction, 99.9% uptime, 3x scalability improvement'
+      title: 'Cloud Migration for SaaS Platform',
+      challenge: 'Legacy infrastructure limiting scalability and costing 45% more than cloud',
+      solution: 'Multi-phase cloud migration to AWS with architecture redesign for scalability',
+      outcome: '45% annual cost savings, 99.9% uptime, 2x performance improvement'
     },
     {
-      title: 'DevOps Platform Engineering',
-      challenge: 'Manual deployment processes causing delays and errors',
-      solution: 'End-to-end CI/CD pipeline with infrastructure automation',
-      outcome: '80% faster deployments, 95% reduction in deployment errors'
+      title: 'DevOps Platform Implementation',
+      challenge: 'Manual deployment processes causing 2-week release cycles and errors',
+      solution: 'End-to-end CI/CD pipeline with infrastructure automation and containerization',
+      outcome: '70% faster deployments, 90% reduction in errors, daily releases enabled'
     },
     {
-      title: 'Cloud Financial Optimization',
-      challenge: 'Escalating cloud costs without visibility or control',
-      solution: 'FinOps implementation with automated cost monitoring and optimization',
-      outcome: '45% cost savings, real-time cost visibility, automated resource scaling'
+      title: 'Cloud FinOps Program',
+      challenge: 'Uncontrolled cloud costs growing 30% annually without visibility',
+      solution: 'FinOps implementation with automated monitoring and reserved capacity planning',
+      outcome: '38% annual savings, real-time cost controls, right-sized resources'
     }
   ];
 
@@ -97,7 +97,7 @@ const CloudInfrastructure = () => {
             <span className="gradient-text block mt-2">The foundation of digital transformation</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-            Comprehensive cloud transformation services that establish secure, scalable, and cost-optimized infrastructure foundations for global enterprises. We deliver the digital backbone that powers innovation, agility, and growth.
+            Comprehensive cloud transformation services that establish secure, scalable, and cost-optimized infrastructure for organizations at any stage. We deliver the digital backbone that powers innovation, agility, and growth.
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ const CloudInfrastructure = () => {
           <div className="text-center mb-16">
             <h2 className="section-title animate-fade-in-up">Core Services</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              Enterprise-grade cloud services that enable scalability, security, and operational excellence
+              Cloud services that enable scalability, security, and operational excellence
             </p>
           </div>
 
@@ -141,12 +141,12 @@ const CloudInfrastructure = () => {
             <div className="animate-fade-in-up">
               <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Why Cloud Excellence Matters</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Enterprise cloud infrastructure is the foundation of digital transformation. Legacy systems create operational 
-                bottlenecks, security vulnerabilities, and cost inefficiencies that limit scalability and global operations.
+                Cloud infrastructure is the foundation of digital transformation. Legacy systems create operational 
+                bottlenecks, security vulnerabilities, and cost inefficiencies that limit scalability.
               </p>
               <div className="space-y-4">
                 {[
-                  'Enterprise-grade scalability for global operations',
+                  'Scalability for global operations',
                   'Advanced security and compliance frameworks',
                   'Measurable cost optimization (30-60% savings)',
                   '99.9% uptime with automated operations'
@@ -161,12 +161,12 @@ const CloudInfrastructure = () => {
             <div className="card bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800 animate-fade-in-up delay-200">
               <div className="text-center">
                 <Award className="w-16 h-16 text-blue-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Enterprise Excellence</h3>
+                <h3 className="text-2xl font-bold mb-4">Cloud Excellence</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Our cloud solutions are built to enterprise standards, ensuring reliability, security, and performance at scale.
+                  Our cloud solutions are built to the highest standards, ensuring reliability, security, and performance at scale.
                 </p>
                 <p className="text-sm text-blue-600 dark:text-blue-400 font-semibold">
-                  Infrastructure that powers innovation.
+                  Infrastructure that drives business outcomes.
                 </p>
               </div>
             </div>
@@ -200,10 +200,10 @@ const CloudInfrastructure = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Enterprise Security</h4>
+              <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Security & Compliance</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Bank-level security with automated compliance monitoring, threat detection, 
-                and disaster recovery that meets enterprise standards.
+                and disaster recovery that meets industry standards.
               </p>
             </div>
             
