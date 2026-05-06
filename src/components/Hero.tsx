@@ -15,17 +15,16 @@ const Hero = () => {
         <div className="text-center">
           <div className="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-700 dark:text-blue-300 text-sm font-medium mb-8">
             <Zap className="w-4 h-4 mr-2" />
-            Strategy-Led Innovation Agency
+            IT Consulting & Digital Transformation
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Pioneering the Future of
-            <span className="gradient-text block mt-2">Business Innovation</span>
+            Pioneering Enterprise
+            <span className="gradient-text block mt-2">Digital Transformation</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
-            NextMav is a strategy-led innovation agency helping modern businesses automate, scale, and brand for the next era. 
-            Empowering businesses to scale smarter, operate faster, and secure the future through next-generation technology and design.
+            NextMav is an IT consulting and digital transformation company that helps enterprises modernize infrastructure, automate operations, and deploy intelligent systems. We partner with ambitious organizations to build reliable, scalable technology foundations for sustainable growth.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">

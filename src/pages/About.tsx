@@ -36,13 +36,13 @@ const About = () => {
       icon: Target,
       title: 'Strategic Leadership',
       description: 'Former executives from top-tier consulting firms and Fortune 500 companies bring strategic thinking and deep industry expertise to every project.',
-      stats: '5+ Years Average Experience'
+      stats: '3+ Years Average Experience'
     },
     {
       icon: Lightbulb,
       title: 'Product Engineering',
       description: 'Architects and engineers who have designed and shipped scalable products and platforms for global organizations and high-growth companies.',
-      stats: '50+ Deployments'
+      stats: '30+ Deployments'
     },
     {
       icon: Zap,
@@ -111,8 +111,7 @@ const About = () => {
               <Eye className="w-12 h-12 text-blue-600 mx-auto mb-6" />
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                To be the agency that redefines what companies can achieve on the world stage 
-                building brands, growth engines, and systems that compete with the best globally.
+                To be the technology partner that enables organizations to operate at their full potential through reliable infrastructure, intelligent automation, and data-driven systems that compete on the world stage.
               </p>
             </div>
             <div className="card text-center hover-lift animate-fade-in-up delay-200">

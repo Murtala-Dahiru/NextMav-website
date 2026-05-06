@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Mail, MapPin, Users, Briefcase } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,11 +10,35 @@ const Contact = () => {
     division: '',
     message: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setIsLoading(true);
+    setStatus(null);
+
+    try {
+      const { error } = await supabase.from('contacts').insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || null,
+          division: formData.division || null,
+          message: formData.message,
+        },
+      ]);
+
+      if (error) throw error;
+
+      setStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully.' });
+      setFormData({ name: '', company: '', email: '', division: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again later.' });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -184,10 +209,20 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn-primary w-full text-lg py-4">
-                  Start a Conversation
-                  <ArrowRight className="ml-2" size={20} />
+                <button type="submit" className="btn-primary w-full text-lg py-4" disabled={isLoading}>
+                  {isLoading ? 'Sending...' : 'Start a Conversation'}
+                  {!isLoading && <ArrowRight className="ml-2" size={20} />}
                 </button>
+
+                {status && (
+                  <div className={`p-4 rounded-lg ${
+                    status.type === 'success'
+                      ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100'
+                      : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-100'
+                  }`}>
+                    {status.message}
+                  </div>
+                )}
               </form>
             </div>
 
