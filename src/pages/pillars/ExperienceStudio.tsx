@@ -87,9 +87,9 @@ const ExperienceStudio = () => {
           <div className="w-20 h-20 bg-gradient-to-br from-slate-600 to-stone-600 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg">
             <Code className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-8 animate-fade-in-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 animate-fade-in-up">
             Digital Infrastructure & Technology Solutions
-            <span className="gradient-text block mt-2">Systems engineering for enterprise operations</span>
+            <span className="gradient-text block mt-2">Systems engineering for scalable operations</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
             We design, build, integrate, and manage the digital and financial systems that modern businesses rely on to operate and scale. From platform engineering to financial infrastructure, we deliver enterprise-grade technology solutions.

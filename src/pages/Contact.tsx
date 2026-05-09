@@ -185,8 +185,8 @@ const Contact = () => {
                       <option value="partnership">Partnership / Collaboration</option>
                       <option value="managed-support">Managed IT Support</option>
                       <option value="ongoing-support">Ongoing Support / Maintenance</option>
-                      <option value="project-discussion">Project Discussion</option>
-                      <option value="technical-advisory">Technical Advisory</option>
+                  
+                      
                       <option value="other">Other</option>
                     </optgroup>
                   </select>
