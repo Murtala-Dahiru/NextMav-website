@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Zap, Shield, TrendingUp, Users, CheckCircle, Target, Eye, Lightbulb, Star, Award, BarChart, Cloud, Bot, Palette } from 'lucide-react';
+import { ArrowRight, Zap, Shield, TrendingUp, Users, CheckCircle, Target, Eye, Lightbulb, Star, Award, BarChart, Cloud, Bot, Code, Palette } from 'lucide-react';
 import { useRouter } from '../utils/router';
 
 const Home = () => {
@@ -260,7 +260,7 @@ const Home = () => {
               One Intelligent Ecosystem
             </p>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto animate-fade-in-up delay-300">
-              We partner with ambitious organizations at every growth stage from startups launching their first product to established companies scaling globally. Our three divisions combine cloud infrastructure, intelligent automation, and digital products to help any organization move faster, compete harder, and grow with confidence.
+              We partner with ambitious organizations at every growth stage from startups launching their first product to established companies scaling globally. Our three divisions combine cloud infrastructure, intelligent automation, and digital systems integration to help any organization move faster, operate smarter, and achieve technical excellence.
             </p>
           </div>
 
@@ -296,17 +296,18 @@ const Home = () => {
                 gradient: 'from-purple-500 to-indigo-500'
               },
               {
-                icon: Palette,
-                title: 'Digital Product & Experience Transformation',
-                tagline: 'Digital product strategy and experience engineering.',
-                description: 'End-to-end digital product development from strategy and engineering to experience design and low-code enablement.',
+                icon: Code,
+                title: 'Digital Infrastructure & Technology Solutions',
+                tagline: 'Systems Integration & Enterprise Platform Engineering',
+                description: 'We build and integrate mission-critical digital systems, financial infrastructure, and managed technology operations for enterprise organizations.',
                 services: [
-                  'Digital Product Engineering & Platforms',
-                  'Product Experience & Service Design',
-                  'Low-Code, No-Code & Citizen Developer Enablement'
+                  'Platform & Product Engineering',
+                  'Financial Systems & Fintech Integration',
+                  'Managed Technology Operations & CTO Services',
+                  'Accelerated Delivery & Digital Enablement'
                 ],
-                link: '/divisions/digital-product-experience-transformation',
-                gradient: 'from-pink-500 to-rose-500'
+                link: '/divisions/digital-infrastructure-technology-solutions',
+                gradient: 'from-slate-500 to-stone-500'
               }
             ].map((pillar, index) => (
               <div key={index} className="card hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-fade-in-up border border-gray-100 dark:border-gray-700" 
@@ -337,7 +338,7 @@ const Home = () => {
 
           <div className="text-center animate-fade-in-up delay-500">
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              From cloud excellence to intelligent operations and digital product transformation   we deliver high-quality solutions that drive measurable business outcomes.
+              From cloud excellence to intelligent operations and digital infrastructure integration   we deliver enterprise-grade solutions that drive measurable business outcomes.
             </p>
           </div>
         </div>

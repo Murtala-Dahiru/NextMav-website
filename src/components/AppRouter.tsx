@@ -27,7 +27,7 @@ const AppRouter = () => {
         return <CloudInfrastructure />;
       case '/divisions/ai-data-intelligent-operations':
         return <IntelligentSystems />;
-      case '/divisions/digital-product-experience-transformation':
+      case '/divisions/digital-infrastructure-technology-solutions':
         return <ExperienceStudio />;
       case '/portfolio':
         return <Portfolio />;

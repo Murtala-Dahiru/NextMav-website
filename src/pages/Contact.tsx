@@ -173,10 +173,11 @@ const Contact = () => {
                       <option value="decision-intelligence">Decision Intelligence & Advanced Analytics</option>
                       <option value="intelligent-automation">Intelligent Process & Workflow Automation (IPA)</option>
                     </optgroup>
-                    <optgroup label="Digital Product & Experience Transformation">
-                      <option value="product-engineering">Digital Product Engineering & Platforms</option>
-                      <option value="experience-design">Product Experience & Service Design</option>
-                      <option value="low-code">Low-Code, No-Code & Citizen Developer Enablement</option>
+                    <optgroup label="Digital Infrastructure & Technology Solutions">
+                      <option value="platform-engineering">Platform & Product Engineering</option>
+                      <option value="fintech-integration">Financial Systems & Fintech Integration</option>
+                      <option value="managed-operations">Managed Technology Operations & CTO Services</option>
+                      <option value="accelerated-delivery">Accelerated Delivery & Digital Enablement</option>
                     </optgroup>
                     <optgroup label="Other Inquiries">
                       <option value="general-inquiry">General Inquiry</option>

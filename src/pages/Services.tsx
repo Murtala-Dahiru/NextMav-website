@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cloud, Bot, Palette, ArrowRight } from 'lucide-react';
+import { Cloud, Bot, Code, ArrowRight } from 'lucide-react';
 import { useRouter } from '../utils/router';
 
 const Services = () => {
@@ -65,27 +65,31 @@ const Services = () => {
       gradient: 'from-purple-500 to-indigo-500'
     },
     {
-      title: 'Digital Product & Experience Transformation',
-      tagline: 'Exceptional Product Experiences That Drive Growth',
-      description: 'Create products your customers love. We design and build digital experiences that drive engagement, conversion, and growth   from vision through launch and beyond.',
-      icon: Palette,
+      title: 'Digital Infrastructure & Technology Solutions',
+      tagline: 'Systems Integration & Enterprise Platform Engineering',
+      description: 'We build, integrate, and manage the digital systems and technology infrastructure that power modern businesses. From custom platforms to financial systems integration and managed operations.',
+      icon: Code,
       services: [
         {
-          name: 'Digital Product Engineering & Platforms',
-          description: 'We build scalable digital products and platforms using modern engineering practices that deliver exceptional performance and user experiences.'
+          name: 'Platform & Product Engineering',
+          description: 'We design and build scalable digital systems, applications, and platforms that power modern businesses. Services: Custom Software Development, Web & Mobile Application Development, SaaS Platform Development, API Development & System Integration, System Architecture & Product Engineering.'
         },
         {
-          name: 'Product Experience & Service Design',
-          description: 'We design intuitive user experiences and service interactions that drive engagement, conversion, and customer satisfaction across all digital touchpoints.'
+          name: 'Financial Systems & Fintech Integration',
+          description: 'We integrate financial technologies that enable businesses to process payments, manage transactions, and connect to financial infrastructure. Services: Payment Gateway Integration, Financial API Integration, Virtual Account & Bank Integration, Recurring Payment & Billing Integration.'
         },
         {
-          name: 'Low-Code, No-Code & Citizen Developer Enablement',
-          description: 'We implement low-code and no-code platforms that enable rapid application development and empower business users to create solutions independently.'
+          name: 'Managed Technology Operations & CTO Services',
+          description: 'We provide ongoing management, support, and strategic leadership for business technology systems. Services: Managed IT Services & Business Systems Support, Fractional CTO / Virtual CTO Services, Technology Strategy & Roadmapping, System Maintenance & Operational Support, IT Operations Management.'
+        },
+        {
+          name: 'Accelerated Delivery & Digital Enablement',
+          description: 'We help businesses accelerate digital product delivery using modern development approaches and internal enablement systems. Services: Rapid Application Development, Internal Tools & Developer Productivity Systems, Business Process Digitization & Workflow Enablement.'
         }
       ],
-      focus: 'Impact: Launch products that users love, increase conversion rates, and establish competitive advantage through modern design and engineering.',
-      link: '/divisions/digital-product-experience-transformation',
-      gradient: 'from-pink-500 to-rose-500'
+      focus: 'Enterprise-Grade Systems: Build reliable digital infrastructure, integrate mission-critical financial systems, and operate technology with operational excellence.',
+      link: '/divisions/digital-infrastructure-technology-solutions',
+      gradient: 'from-slate-500 to-stone-500'
     }
   ];
 
@@ -159,9 +163,9 @@ const Services = () => {
       <section className="py-20 px-4 bg-gradient-to-r from-gray-50 to-blue-50/30 dark:from-gray-800 dark:to-blue-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="card bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800">
-            <h3 className="text-3xl md:text-4xl font-bold mb-6">Integrated Technology Transformation</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">Enterprise Technology Excellence</h3>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              These three divisions work as an integrated system. Cloud provides the foundation. AI unlocks efficiency. Digital Products drive customer engagement. Together, they help your organization scale faster, operate smarter, and compete harder.
+              Our three divisions form an integrated technology ecosystem. Cloud & Infrastructure provides the foundation. AI & Data unlocks operational intelligence. Digital Infrastructure & Systems Integration deliver enterprise-grade platforms and mission-critical systems. Together, they enable organizations to operate with technical excellence, financial precision, and operational efficiency.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">

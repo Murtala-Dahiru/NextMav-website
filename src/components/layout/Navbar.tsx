@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ChevronDown, ArrowRight, Cloud, Bot, BarChart, Palette, TrendingUp } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowRight, Cloud, Bot, BarChart, Code, TrendingUp } from 'lucide-react';
 import { useRouter } from '../../utils/router';
 
 const Navbar = () => {
@@ -78,14 +78,14 @@ const Navbar = () => {
                     </div>
                   </button>
                   <button
-                    onClick={() => handleNavigation('/divisions/digital-product-experience-transformation')}
+                    onClick={() => handleNavigation('/divisions/digital-infrastructure-technology-solutions')}
                     className="block w-full text-left px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-200 rounded-lg mx-2 group"
                   >
                     <div className="flex items-center">
-                      <Palette className="w-4 h-4 mr-3 text-pink-500" />
+                      <Code className="w-4 h-4 mr-3 text-slate-500" />
                       <div>
-                        <div className="font-semibold">Digital Product & Experience Transformation</div>
-                        <div className="text-xs text-gray-500">Digital product development</div>
+                        <div className="font-semibold">Digital Infrastructure & Technology Solutions</div>
+                        <div className="text-xs text-gray-500">Systems integration & platform engineering</div>
                       </div>
                     </div>
                   </button>
@@ -157,10 +157,10 @@ const Navbar = () => {
               AI, Data & Intelligent Operations
             </button>
             <button
-              onClick={() => handleNavigation('/divisions/digital-product-experience-transformation')}
+              onClick={() => handleNavigation('/divisions/digital-infrastructure-technology-solutions')}
               className="block w-full text-left nav-link pl-6 text-sm"
             >
-              Digital Product & Experience Transformation
+              Digital Infrastructure & Technology Solutions
             </button>
             <button
               onClick={() => handleNavigation('/portfolio')}
