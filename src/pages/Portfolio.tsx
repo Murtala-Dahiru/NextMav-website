@@ -32,7 +32,7 @@ const Portfolio = () => {
     },
     {
       title: 'Client Portal & Product Platform',
-      category: 'Digital Products',
+      category: 'Digital Infrastructure',
       description: 'Designed and developed customer-facing portal with intuitive interface and self-service capabilities. Modern architecture supports scaling for millions of users across multiple markets.',
       image: 'https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=800&q=80',
       icon: Monitor,
@@ -64,7 +64,7 @@ const Portfolio = () => {
     },
     {
       title: 'Digital Product Strategy & Development',
-      category: 'Digital Products',
+      category: 'Digital Infrastructure',
       description: 'End-to-end digital product development including market research, product strategy, UX/UI design, and technical implementation. Launched successfully to target market with strong adoption.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
       icon: Palette,
@@ -82,7 +82,7 @@ const Portfolio = () => {
           </h1>
           <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-6">
             Representative engagements demonstrating our expertise across cloud infrastructure, AI and data intelligence, 
-            and digital product transformation.
+            and systems integration.
           </p>
           <p className="text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8">
             Each project demonstrates our ability to deliver high-quality, scalable solutions that drive measurable business outcomes across organizations of all sizes.

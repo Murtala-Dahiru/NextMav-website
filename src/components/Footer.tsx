@@ -80,7 +80,7 @@ const Footer = () => {
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Strategy & Architecture</a></li>
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Platform Engineering & DevOps</a></li>
               <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI Strategy & Implementation</a></li>
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Product Engineering</a></li>
+              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Systems Integration</a></li>
             </ul>
           </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#/divisions/cloud-infrastructure-excellence" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Excellence</a></li>
               <li><a href="#/divisions/ai-data-intelligent-operations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI & Data</a></li>
-              <li><a href="#/divisions/digital-product-experience-transformation" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Digital Products</a></li>
+              <li><a href="#/divisions/digital-infrastructure-technology-solutions" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Digital Infrastructure & Technology Solutions</a></li>
             </ul>
           </div>
 

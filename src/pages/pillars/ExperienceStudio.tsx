@@ -8,14 +8,14 @@ const ExperienceStudio = () => {
   const coreServices = [
     {
       icon: Code,
-      title: 'Platform & Product Engineering',
+      title: 'Platform Engineering',
       description: 'We engineer scalable digital platforms, applications, and integrated systems that power modern business operations.',
       features: [
         'Custom Software Development',
         'Web & Mobile Application Development',
         'SaaS Platform Development',
         'API Development & System Integration',
-        'System Architecture & Product Engineering'
+        'System Architecture & Platform Engineering'
       ]
     },
     {

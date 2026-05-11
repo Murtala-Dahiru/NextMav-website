@@ -171,7 +171,7 @@ const Home = () => {
                 {[
                   { icon: Cloud, title: 'Cloud Excellence', desc: 'Scalable architecture' },
                   { icon: Bot, title: 'AI & Data Intelligence', desc: 'Intelligent operations' },
-                  { icon: Palette, title: 'Digital Products', desc: 'Experience transformation' },
+                  { icon: Code, title: 'Digital Infrastructure & Technology Solutions', desc: 'Systems integration' },
                   { icon: Shield, title: 'Security & Compliance', desc: 'Industry standards' },
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-800/50 transition-all duration-300">
@@ -231,7 +231,7 @@ const Home = () => {
               {[
                 { icon: Cloud, title: 'Cloud Excellence', desc: 'Scalable architecture' },
                 { icon: Bot, title: 'AI & Data Intelligence', desc: 'Intelligent operations' },
-                { icon: Palette, title: 'Digital Products', desc: 'Experience transformation' },
+                { icon: Code, title: 'Digital Infrastructure & Technology Solutions', desc: 'Systems integration' },
                 { icon: Shield, title: 'Security & Compliance', desc: 'Industry standards' },
               ].map((feature, index) => (
                 <div key={index} className="card text-center group hover:shadow-lg transition-all duration-300">
@@ -301,7 +301,7 @@ const Home = () => {
                 tagline: 'Systems Integration & Enterprise Platform Engineering',
                 description: 'We build and integrate mission-critical digital systems, financial infrastructure, and managed technology operations for enterprise organizations.',
                 services: [
-                  'Platform & Product Engineering',
+                  'Platform Engineering',
                   'Financial Systems & Fintech Integration',
                   'Managed Technology Operations & CTO Services',
                   'Accelerated Delivery & Digital Enablement'
@@ -387,7 +387,7 @@ const Home = () => {
                 We're designed for ambitious organizations: high-growth startups, scaling mid-market companies, and organizations optimizing operations.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                We operate at the intersection of cloud systems, data intelligence, and product engineering, helping companies move from manual processes to autonomous, data-driven operations at any scale.
+                We operate at the intersection of cloud systems, data intelligence, and systems integration, helping companies move from manual processes to autonomous, data-driven operations at any scale.
               </p>
             </div>
           </div>

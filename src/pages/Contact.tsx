@@ -174,7 +174,7 @@ const Contact = () => {
                       <option value="intelligent-automation">Intelligent Process & Workflow Automation (IPA)</option>
                     </optgroup>
                     <optgroup label="Digital Infrastructure & Technology Solutions">
-                      <option value="platform-engineering">Platform & Product Engineering</option>
+                      <option value="platform-engineering">Platform Engineering</option>
                       <option value="fintech-integration">Financial Systems & Fintech Integration</option>
                       <option value="managed-operations">Managed Technology Operations & CTO Services</option>
                       <option value="accelerated-delivery">Accelerated Delivery & Digital Enablement</option>

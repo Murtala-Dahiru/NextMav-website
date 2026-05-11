@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">Technology Systems Partner for Growing Organizations</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-            NextMav specializes in cloud infrastructure, intelligent automation, and digital product engineering. We work with high-growth startups, mid-market companies, and established organizations to build scalable systems that drive operational excellence and measurable business outcomes.
+            NextMav specializes in cloud infrastructure, intelligent automation, and systems integration. We work with high-growth startups, mid-market companies, and established organizations to build scalable systems that drive operational excellence and measurable business outcomes.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const About = () => {
               We're built for any ambitious organization: high-growth startups expanding rapidly, mid-market companies optimizing operations, and established organizations modernizing infrastructure.
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              We focus on cloud systems, data intelligence, and product engineering—helping organizations move from manual work to intelligent, data-driven operations that compete confidently.
+              We focus on cloud systems, data intelligence, and systems integration—helping organizations move from manual work to intelligent, data-driven operations that compete confidently.
             </p>
           </div>
         </div>

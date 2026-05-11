@@ -71,8 +71,8 @@ const Services = () => {
       icon: Code,
       services: [
         {
-          name: 'Platform & Product Engineering',
-          description: 'We design and build scalable digital systems, applications, and platforms that power modern businesses. Services: Custom Software Development, Web & Mobile Application Development, SaaS Platform Development, API Development & System Integration, System Architecture & Product Engineering.'
+          name: 'Platform Engineering',
+          description: 'We design and build scalable digital systems, applications, and platforms that power modern businesses. Services: Custom Software Development, Web & Mobile Application Development, SaaS Platform Development, API Development & System Integration, System Architecture & Platform Engineering.'
         },
         {
           name: 'Financial Systems & Fintech Integration',

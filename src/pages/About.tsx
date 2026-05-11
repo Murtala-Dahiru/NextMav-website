@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   const differentiators = [
-    'We combine cloud infrastructure, intelligent automation, and product engineering in one firm.',
+    'We combine cloud infrastructure, intelligent automation, and systems integration in one firm.',
     'We engineer systems that scale, not short-term fixes.',
     'We operate with the speed of startups and the rigor of global technology consultancies.',
   ];
@@ -40,7 +40,7 @@ const About = () => {
     },
     {
       icon: Lightbulb,
-      title: 'Product Engineering',
+      title: 'Platform Engineering',
       description: 'Architects and engineers who have designed and shipped scalable products and platforms for global organizations and high-growth companies.',
       stats: '30+ Deployments'
     },
@@ -75,7 +75,7 @@ const About = () => {
             <span className="gradient-text block mt-2">that power company growth.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-            NextMav is a technology systems firm focused on transformation. We specialize in cloud infrastructure, intelligent automation, and digital product engineering for high-growth companies and established organizations. Our focus: building scalable systems that drive measurable business outcomes.
+            NextMav is a technology systems firm focused on transformation. We specialize in cloud infrastructure, intelligent automation, and systems integration for high-growth companies and established organizations. Our focus: building scalable systems that drive measurable business outcomes.
           </p>
         </div>
       </section>
