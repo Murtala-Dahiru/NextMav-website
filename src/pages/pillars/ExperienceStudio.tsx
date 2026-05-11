@@ -36,7 +36,7 @@ const ExperienceStudio = () => {
       features: [
         'Managed IT Services & Business Systems Support',
         'Fractional CTO / Virtual CTO Services',
-        'Technology Strategy & Roadmapping',
+        'Business Technology & Operational Excellence',
         'System Maintenance & Operational Support',
         'IT Operations Management'
       ]
@@ -68,7 +68,7 @@ const ExperienceStudio = () => {
     },
     {
       title: 'Fractional CTO & Technology Strategy',
-      challenge: 'Technology decisions without strategic oversight or enterprise architecture governance',
+      challenge: 'Technology decisions without strategic oversight or technology architecture governance',
       solution: 'Fractional CTO engagement providing technology strategy and operational governance',
       outcome: 'Aligned technology roadmap, reduced technical debt, 60% faster delivery cycles'
     }
@@ -92,7 +92,7 @@ const ExperienceStudio = () => {
             <span className="gradient-text block mt-2">Systems engineering for scalable operations</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-            We design, build, integrate, and manage the digital and financial systems that modern businesses rely on to operate and scale. From platform engineering to financial infrastructure, we deliver enterprise-grade technology solutions.
+            We design, build, integrate, and manage the digital and financial systems that modern businesses rely on to operate and scale. From platform engineering to financial infrastructure, we deliver modern, scalable technology solutions.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ const ExperienceStudio = () => {
           <div className="text-center mb-16">
             <h2 className="section-title animate-fade-in-up">Core Services</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              Enterprise systems integration and technology solutions that drive operational excellence
+              Scalable systems integration and technology solutions that drive operational excellence
             </p>
           </div>
 
@@ -134,14 +134,14 @@ const ExperienceStudio = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Why Enterprise Systems Matter</h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Why Reliable Systems Matter</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Digital infrastructure and integrated systems directly impact operational efficiency, financial accuracy, scalability, and competitive advantage. 
                 Modern businesses require reliable platforms, secure financial systems, and strategic technology leadership to operate at scale.
               </p>
               <div className="space-y-4">
                 {[
-                  'Enterprise-grade platforms that scale with operational demand',
+                  'Scalable, modern platforms that grow with operational demand',
                   'Financial infrastructure that enables secure transactions and compliance',
                   'Technology operations that ensure 99.9% uptime and reliability',
                   'Strategic systems architecture that reduces technical debt'
@@ -156,7 +156,7 @@ const ExperienceStudio = () => {
             <div className="card bg-gradient-to-br from-slate-50 to-stone-50 dark:from-slate-900/20 dark:to-stone-900/20 border-2 border-slate-100 dark:border-slate-800 animate-fade-in-up delay-200">
               <div className="text-center">
                 <Shield className="w-16 h-16 text-slate-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Enterprise Reliability</h3>
+                <h3 className="text-2xl font-bold mb-4">Systems Reliability</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Our systems integration and managed operations typically deliver 99.9%+ uptime while reducing operational costs by 40-60% through automation and optimization.
                 </p>
@@ -175,7 +175,7 @@ const ExperienceStudio = () => {
           <div className="text-center mb-16">
             <h2 className="section-title animate-fade-in-up">What Clients Can Expect</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              Enterprise-grade systems and reliable technology operations that drive operational excellence
+              Reliable systems and professional technology operations that drive operational excellence
             </p>
           </div>
 
@@ -208,7 +208,7 @@ const ExperienceStudio = () => {
               </div>
               <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Security & Compliance</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Enterprise-grade security, compliance frameworks, financial standards adherence, 
+                Institutional-grade security, compliance frameworks, financial standards adherence, 
                 and governance that protect critical systems and data.
               </p>
             </div>
@@ -222,7 +222,7 @@ const ExperienceStudio = () => {
           <div className="text-center mb-16">
             <h2 className="section-title animate-fade-in-up">Sample Engagements</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              Enterprise infrastructure transformations that demonstrate the power of systems integration and technology strategy
+              Digital infrastructure transformations that demonstrate the power of systems integration and technology strategy
             </p>
           </div>
 
@@ -254,7 +254,7 @@ const ExperienceStudio = () => {
       <section className="py-20 px-4 bg-gradient-to-r from-slate-50 to-stone-50 dark:from-slate-900/20 dark:to-stone-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="card border-2 border-slate-100 dark:border-slate-800">
-            <h3 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Enterprise Systems?</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business Systems?</h3>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               Let's design, build, and optimize the digital infrastructure that powers your business at scale.
             </p>
