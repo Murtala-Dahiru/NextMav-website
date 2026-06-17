@@ -6,25 +6,25 @@ const Footer = () => {
     {
       name: 'Twitter',
       icon: Twitter,
-      url: 'https://twitter.com/YourHandle',
-      handle: '@YourHandle'
+      url: 'https://x.com/nextmav',
+      handle: '@nextmav'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://instagram.com/YourHandle',
-      handle: '@YourHandle'
+      url: 'https://www.instagram.com/nextmav_official?igsh=bHVyazRuN3FzNzI5',
+      handle: '@nextmav_official'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/company/nextmav',
+      url: 'https://www.linkedin.com/company/nextmav/',
       handle: 'NextMav'
     },
     {
       name: 'Facebook',
       icon: Facebook,
-      url: 'https://facebook.com/nextmav',
+      url: 'https://www.facebook.com/share/18GQPXYxpu/',
       handle: 'NextMav'
     }
   ];
@@ -43,8 +43,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-3xl font-bold gradient-text mb-4">NextMav</h3>
             <p className="text-gray-400 mb-6 text-lg leading-relaxed">
-              Pioneering the future of business innovation through technology and design. 
-              We help modern businesses automate, scale, and brand for the next era.
+              NextMav delivers digital infrastructure, financial systems integration, and technology solutions that help businesses build, connect, and scale with confidence. We partner with organizations to engineer the platforms, systems, and operations that power sustainable growth.
             </p>
             
             {/* Social Media Links */}
