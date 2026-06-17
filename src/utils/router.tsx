@@ -16,20 +16,40 @@ export const useRouter = () => {
 };
 
 export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [currentPath, setCurrentPath] = useState(window.location.hash.slice(1) || '/');
+  const getInitialPath = () => {
+    const hash = window.location.hash.slice(1);
+    if (!hash || hash === '/') {
+      window.location.hash = '/home';
+      return '/home';
+    }
+    return hash;
+  };
+
+  const [currentPath, setCurrentPath] = useState(getInitialPath);
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPath(window.location.hash.slice(1) || '/');
+      const hash = window.location.hash.slice(1);
+      if (!hash || hash === '/') {
+        window.location.hash = '/home';
+      } else {
+        setCurrentPath(hash);
+      }
     };
+
+    const hash = window.location.hash.slice(1);
+    if (!hash || hash === '/') {
+      window.location.hash = '/home';
+    }
 
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const navigate = (path: string) => {
-    window.location.hash = path;
-    setCurrentPath(path);
+    const targetPath = path === '/' ? '/home' : path;
+    window.location.hash = targetPath;
+    setCurrentPath(targetPath);
   };
 
   return (

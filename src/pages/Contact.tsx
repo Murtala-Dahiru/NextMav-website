@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Mail, MapPin, Users, Briefcase } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Users, Briefcase, Phone } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const Contact = () => {
@@ -238,8 +238,20 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:partners@nextmav.com" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                        partners@nextmav.com
+                      <a href="mailto:partner@nextmav.com" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                        partner@nextmav.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
+                      <Phone className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">Phone</p>
+                      <a href="tel:09026626000" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                        0902 662 6000
                       </a>
                     </div>
                   </div>
@@ -250,7 +262,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Headquarters</p>
-                      <p className="text-gray-600 dark:text-gray-300">Abuja, Nigeria</p>
+                      <p className="text-gray-600 dark:text-gray-300">Kaduna State, Nigeria</p>
                     </div>
                   </div>
                 </div>
@@ -314,7 +326,7 @@ const Contact = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                   Send us your portfolio, tell us what excites you about NextMav, and let's explore how you can contribute to our mission.
                 </p>
-                <a href="mailto:careers@nextmav.com" className="btn-primary inline-flex items-center">
+                <a href="mailto:info@nextmav.com" className="btn-primary inline-flex items-center">
                   Send Your Application
                   <ArrowRight className="ml-2" size={20} />
                 </a>
@@ -341,7 +353,7 @@ const Contact = () => {
           </div>
 
           <div className="text-center mt-12">
-            <a href="mailto:partners@nextmav.com" className="btn-primary inline-flex items-center text-lg px-8 py-4">
+            <a href="mailto:partner@nextmav.com" className="btn-primary inline-flex items-center text-lg px-8 py-4">
               Request a Discovery Call
               <ArrowRight className="ml-2" size={24} />
             </a>

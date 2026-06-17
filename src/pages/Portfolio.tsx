@@ -1,123 +1,213 @@
-import React from 'react';
-import { ArrowRight, CheckCircle, Award, Users, Target, Zap, TrendingUp, Cloud, Bot, Palette, Monitor, BarChart } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowRight, Award, Users, Zap, Cloud, Bot, Monitor, BarChart } from 'lucide-react';
 import { useRouter } from '../utils/router';
 
 const Portfolio = () => {
   const { navigate } = useRouter();
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const categories = [
+    { id: 'All', label: 'All Projects' },
+    { id: 'Cloud Infrastructure', label: 'Cloud Infrastructure' },
+    { id: 'AI & Automation', label: 'AI & Automation' },
+    { id: 'Digital Platforms', label: 'Digital Platforms' }
+  ];
 
   const portfolioHighlights = [
     {
       title: 'Cloud Architecture Modernization',
       category: 'Cloud Infrastructure',
-      description: 'Multi-phase cloud infrastructure migration for a SaaS platform, transitioning from on-premise data centers to scalable cloud infrastructure. Included architecture design, security implementation, and cost optimization.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+      description: 'Led a multi-phase cloud migration for a SaaS platform, transitioning from legacy servers to a modern, containerized AWS infrastructure with multi-zone redundancy.',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
       icon: Cloud,
-      outcomes: ['45% Cost Reduction', '99.9% Uptime', '2x Performance']
+      outcomes: ['40% Cost Reduction', '99.99% Guaranteed Uptime', '3.5x Faster Deployments'],
+      techStack: ['AWS', 'Terraform', 'Kubernetes', 'Docker', 'GitHub Actions']
     },
     {
-      title: 'Intelligent Workflow Automation',
-      category: 'Intelligent Systems',
-      description: 'AI-powered process automation implementation for financial services, eliminating manual data processing across operations and compliance workflows. Reduced processing time while maintaining audit compliance.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
+      title: 'Enterprise Workflow Automation',
+      category: 'AI & Automation',
+      description: 'Developed an intelligent document-processing pipeline for a logistics provider, automating extraction of cargo manifests and invoices to accelerate billing cycles.',
+      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
       icon: Bot,
-      outcomes: ['55% Time Savings', '98% Accuracy', 'Compliance Maintained']
+      outcomes: ['70% Processing Cut', '99.2% Accuracy Rate', '80+ Hours Saved'],
+      techStack: ['Python', 'FastAPI', 'OpenCV', 'AWS Lambda', 'PostgreSQL']
     },
     {
-      title: 'Analytics & Business Intelligence Platform',
-      category: 'Intelligent Systems',
-      description: 'Built unified analytics platform integrating data from multiple sources, providing real-time dashboards for operational and strategic decision-making across the organization.',
+      title: 'Operational Telemetry Dashboard',
+      category: 'Digital Platforms',
+      description: 'Designed and built a unified telemetry and operations dashboard for a regional distribution network, enabling real-time asset tracking and performance alerts.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
       icon: BarChart,
-      outcomes: ['Real-time Insights', '75% Faster Analysis', 'Data-Driven Decisions']
+      outcomes: ['100% Telemetry Coverage', '25% Fewer Incidents', '4x Faster Analytics'],
+      techStack: ['React', 'TypeScript', 'Node.js', 'TailwindCSS', 'Chart.js']
     },
     {
-      title: 'Client Portal & Product Platform',
-      category: 'Digital Infrastructure',
-      description: 'Designed and developed customer-facing portal with intuitive interface and self-service capabilities. Modern architecture supports scaling for millions of users across multiple markets.',
+      title: 'SaaS Client Portal',
+      category: 'Digital Platforms',
+      description: 'Developed a secure client onboarding and service portal for a financial advisory firm, replacing email-based workflows with structured self-service portals.',
       image: 'https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=800&q=80',
       icon: Monitor,
-      outcomes: ['80% User Adoption', '4.7/5 Rating', '40% Task Efficiency']
+      outcomes: ['85% Client Self-Onboarding', '90% Ticket Reduction', 'SOC-2 Compliance Met'],
+      techStack: ['React', 'Next.js', 'Supabase', 'TailwindCSS', 'Vercel']
     },
     {
-      title: 'CI/CD Platform & DevOps Excellence',
+      title: 'DevOps & CI/CD Pipelines',
       category: 'Cloud Infrastructure',
-      description: 'Automated deployment infrastructure with containerization, orchestration, and infrastructure-as-code. Enabled development teams to deploy safely to production multiple times daily.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+      description: 'Standardized the software release lifecycle for a growing e-commerce brand by implementing infrastructure-as-code and automated staging/production testing cycles.',
+      image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
       icon: Zap,
-      outcomes: ['70% Faster Deployments', '90% Error Reduction', 'Continuous Delivery']
+      outcomes: ['0 Manual Deployments', '95% Error Reduction', '5-Min Deploy Time'],
+      techStack: ['Terraform', 'GitHub Actions', 'Docker', 'AWS ECS', 'Slack API']
     },
     {
-      title: 'Cloud Cost Optimization Program',
-      category: 'Cloud Infrastructure',
-      description: 'Comprehensive cost analysis and optimization strategy for multi-cloud environment. Implemented automated resource management, reserved capacity planning, and usage monitoring.',
-      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-      icon: TrendingUp,
-      outcomes: ['38% Annual Savings', 'Automated Controls', 'Performance Optimized']
-    },
-    {
-      title: 'Intelligent Customer Support System',
-      category: 'Intelligent Systems',
-      description: 'AI-powered support platform providing 24/7 customer assistance with natural language processing. Escalates complex issues to human agents with full context and recommended solutions.',
+      title: 'Intelligent Support Integration',
+      category: 'AI & Automation',
+      description: 'Integrated a specialized NLP chatbot into an online store\'s support center, answering frequent customer queries instantly and triaging complex tickets with context.',
       image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
       icon: Users,
-      outcomes: ['24/7 Coverage', '65% Self-Resolution', 'Higher Satisfaction']
-    },
-    {
-      title: 'Digital Product Strategy & Development',
-      category: 'Digital Infrastructure',
-      description: 'End-to-end digital product development including market research, product strategy, UX/UI design, and technical implementation. Launched successfully to target market with strong adoption.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-      icon: Palette,
-      outcomes: ['On-Schedule Launch', 'Strong User Adoption', 'Positive Market Response']
+      outcomes: ['24/7 Support Active', '55% Ticket Deflection', '4.8/5 CSAT Rating'],
+      techStack: ['Python', 'LangChain', 'OpenAI API', 'Node.js', 'Redis']
     }
   ];
 
+  const additionalCaseStudies = [
+    {
+      title: 'E-commerce Performance Optimization',
+      type: 'Systems Optimization',
+      challenge: 'Slow page load times during seasonal traffic spikes causing high cart abandonment rates.',
+      solution: 'Deployed a dynamic CDN configuration, optimized database queries, and implemented Redis caching layers.',
+      outcome: '45% faster loading times and a 15% lift in checkout completions.'
+    },
+    {
+      title: 'Automated Dispatch & Scheduling',
+      type: 'Workflow Automation',
+      challenge: 'Manual field-agent booking for a repair service leading to dispatch errors and routing conflicts.',
+      solution: 'Created an automated scheduling microservice integrating Google Maps and calendar APIs.',
+      outcome: 'Eliminated dispatch errors and reduced field travel times by 20%.'
+    },
+    {
+      title: 'AWS Security Hardening & Audit',
+      type: 'Security & Compliance',
+      challenge: 'Security vulnerabilities in a scaling fintech startup\'s configuration identified before a critical audit.',
+      solution: 'Applied IAM least-privilege policies, security groups, and enabled automated AWS GuardDuty alerting.',
+      outcome: 'Achieved audit readiness and fully secured production pipelines in 3 weeks.'
+    },
+    {
+      title: 'CRM Data Synchronization',
+      type: 'Data Integration',
+      challenge: 'Siloed user data across marketing, sales, and support channels prevented single customer views.',
+      solution: 'Designed synchronization pipelines using secure webhooks to unify CRM data into a single datastore.',
+      outcome: 'Consolidated customer records and unlocked accurate lifetime value reporting.'
+    }
+  ];
+
+  const filteredProjects = activeFilter === 'All'
+    ? portfolioHighlights
+    : portfolioHighlights.filter(project => project.category === activeFilter);
+
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 relative overflow-hidden bg-gray-50/50 dark:bg-gray-950">
+      {/* Decorative background mesh */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+      <div className="absolute top-20 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl dark:bg-blue-600/5 pointer-events-none"></div>
+      <div className="absolute top-40 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl dark:bg-cyan-600/5 pointer-events-none"></div>
+
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 via-blue-50/30 to-cyan-50/30 dark:from-gray-900 dark:via-blue-900/20 dark:to-cyan-900/20">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section className="relative pt-20 pb-16 px-4">
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800/50 rounded-full uppercase mb-5">
+            <Award className="w-3.5 h-3.5" />
+            Proven Delivery & Integration
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white leading-tight">
             Our <span className="gradient-text">Portfolio</span>
           </h1>
-          <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-6">
-            Representative engagements demonstrating our expertise across cloud infrastructure, AI and data intelligence, 
-            and systems integration.
-          </p>
-          <p className="text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8">
-            Each project demonstrates our ability to deliver high-quality, scalable solutions that drive measurable business outcomes across organizations of all sizes.
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            A curated showcase of real-world engagements demonstrating how we design, build, and deploy production-grade software and cloud environments for scaling businesses.
           </p>
         </div>
       </section>
 
-      {/* Portfolio Highlights */}
-      <section className="py-20 px-4 bg-white dark:bg-gray-900">
+      {/* Case Studies & Showcases */}
+      <section className="py-8 pb-24 px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {portfolioHighlights.map((project, index) => (
-              <div key={index} className="card group hover:scale-105 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700">
-                <div className="relative h-48 mb-6">
+          {/* Interactive Filters */}
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setActiveFilter(category.id)}
+                className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border ${
+                  activeFilter === category.id
+                    ? 'bg-blue-600 border-blue-600 text-white shadow-md shadow-blue-500/20'
+                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+                }`}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Primary Projects Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            {filteredProjects.map((project, index) => (
+              <div key={index} className="flex flex-col bg-white dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 rounded-2xl overflow-hidden hover-lift group transition-all duration-300">
+                {/* Image Wrapper */}
+                <div className="relative h-52 overflow-hidden bg-gray-100 dark:bg-gray-900">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-t-lg group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-955/80 via-gray-955/20 to-transparent"></div>
+                  {/* Category Badge overlay */}
                   <div className="absolute top-4 left-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-white/95 backdrop-blur-sm text-gray-800 rounded-full text-xs font-semibold shadow-lg">
-                      <project.icon className="w-3 h-3 mr-2" />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/95 dark:bg-gray-900/90 backdrop-blur-sm text-gray-800 dark:text-gray-200 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm border border-white/20">
+                      <project.icon className="w-3 h-3 text-blue-600 dark:text-blue-400" />
                       {project.category}
-                    </div>
+                    </span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm leading-relaxed">{project.description}</p>
-                  <div className="grid grid-cols-3 gap-2">
-                    {project.outcomes.map((outcome, oIndex) => (
-                      <div key={oIndex} className="text-center">
-                        <div className="text-xs font-bold text-blue-600 dark:text-blue-400">{outcome}</div>
+                
+                {/* Card Content */}
+                <div className="flex-1 p-6 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2.5 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                      {project.description}
+                    </p>
+                  </div>
+                  
+                  <div>
+                    {/* Key Metrics / Outcomes */}
+                    <div className="border-t border-gray-100 dark:border-gray-700/50 pt-5 pb-5">
+                      <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Key Business Impact</div>
+                      <div className="grid grid-cols-3 gap-2">
+                        {project.outcomes.map((outcome, oIndex) => {
+                          const parts = outcome.split(' ');
+                          const number = parts[0];
+                          const label = parts.slice(1).join(' ');
+                          return (
+                            <div key={oIndex} className="text-center bg-gray-50 dark:bg-gray-900/50 rounded-lg p-2 border border-gray-100/50 dark:border-gray-700/30">
+                              <div className="text-xs font-extrabold text-blue-600 dark:text-blue-400 tracking-tight">{number}</div>
+                              <div className="text-[9px] text-gray-500 dark:text-gray-400 font-medium leading-tight mt-0.5">{label}</div>
+                            </div>
+                          );
+                        })}
                       </div>
-                    ))}
+                    </div>
+                    
+                    {/* Tech Stack */}
+                    <div className="border-t border-gray-100 dark:border-gray-700/50 pt-4 flex flex-wrap gap-1.5">
+                      {project.techStack.map((tech, tIndex) => (
+                        <span key={tIndex} className="px-2.5 py-0.5 bg-slate-50 dark:bg-slate-800 text-[10px] font-semibold text-slate-600 dark:text-slate-300 rounded-md border border-slate-100 dark:border-slate-700">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,75 +215,68 @@ const Portfolio = () => {
           </div>
 
           {/* Additional Case Studies */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Additional Case Studies</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="card border border-gray-100 dark:border-gray-700">
-                <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Financial Services Cloud Migration</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Migrated critical financial systems to AWS with enhanced security and compliance frameworks.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div><span className="font-semibold">Challenge:</span> Legacy infrastructure limiting scalability and compliance</div>
-                  <div><span className="font-semibold">Solution:</span> Multi-phase cloud migration with zero-downtime deployment</div>
-                  <div><span className="font-semibold text-green-600">Outcome:</span> 60% cost reduction, enhanced security posture</div>
+          <div className="mb-20">
+            <h3 className="text-3xl font-extrabold mb-10 text-center text-gray-900 dark:text-white">Additional Engagements</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              {additionalCaseStudies.map((study, index) => (
+                <div key={index} className="p-6 bg-white dark:bg-gray-800/40 border border-gray-100 dark:border-gray-700/50 rounded-xl relative group hover:border-blue-500/20 dark:hover:border-blue-500/20 transition-all duration-300">
+                  <h4 className="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center justify-between">
+                    {study.title}
+                    <span className="text-[9px] font-semibold tracking-wider text-gray-400 dark:text-gray-500 uppercase px-2 py-0.5 bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded">
+                      {study.type}
+                    </span>
+                  </h4>
+                  <div className="space-y-3.5 text-sm">
+                    <div>
+                      <span className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest block mb-1">Challenge</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{study.challenge}</p>
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest block mb-1">Solution</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{study.solution}</p>
+                    </div>
+                    <div className="pt-3 border-t border-gray-50 dark:border-gray-700/30 flex items-center justify-between">
+                      <span className="text-xs font-bold text-gray-500 dark:text-gray-400">Impact Outcome</span>
+                      <span className="text-xs font-bold text-green-600 dark:text-green-400 px-2.5 py-1 bg-green-50 dark:bg-green-950/20 rounded-full border border-green-100 dark:border-green-900/20">
+                        {study.outcome}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="card border border-gray-100 dark:border-gray-700">
-                <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Healthcare AI Implementation</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Implemented AI-powered patient data analysis system with predictive capabilities.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div><span className="font-semibold">Challenge:</span> Manual patient data processing causing delays</div>
-                  <div><span className="font-semibold">Solution:</span> AI automation with secure data processing pipeline</div>
-                  <div><span className="font-semibold text-green-600">Outcome:</span> 70% faster processing, improved patient outcomes</div>
-                </div>
-              </div>
-              
-              <div className="card border border-gray-100 dark:border-gray-700">
-                <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">E-commerce Platform Development</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Built scalable e-commerce platform with modern architecture and optimized user experience.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div><span className="font-semibold">Challenge:</span> Outdated platform limiting growth and user experience</div>
-                  <div><span className="font-semibold">Solution:</span> Modern React-based platform with microservices architecture</div>
-                  <div><span className="font-semibold text-green-600">Outcome:</span> 100% increase in conversions, 50% faster load times</div>
-                </div>
-              </div>
-              
-              <div className="card border border-gray-100 dark:border-gray-700">
-                <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Manufacturing Process Automation</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Automated manufacturing workflows with IoT integration and real-time monitoring.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div><span className="font-semibold">Challenge:</span> Manual processes causing inefficiencies and errors</div>
-                  <div><span className="font-semibold">Solution:</span> IoT-enabled automation with predictive maintenance</div>
-                  <div><span className="font-semibold text-green-600">Outcome:</span> 40% efficiency improvement, 90% error reduction</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* Portfolio Summary */}
-          <div className="card bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Portfolio Summary</h3>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text mb-2">50+</div>
-                  <div className="text-gray-600 dark:text-gray-300">Projects Delivered</div>
+          {/* Operating Footprint / Stats */}
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-900 to-slate-900 dark:from-black dark:to-gray-950 text-white p-8 md:p-12 border border-gray-800 shadow-xl">
+            {/* Ambient glows */}
+            <div className="absolute -right-20 -top-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute -left-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-10">
+                <h3 className="text-2xl font-bold tracking-tight text-white mb-2">Our Operating Footprint</h3>
+                <p className="text-gray-400 text-sm max-w-xl mx-auto leading-relaxed">
+                  Delivering reliable, production-ready digital solutions with a focused team of senior architects and engineers.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-1">50+</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Projects Completed</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text mb-2">10+</div>
-                  <div className="text-gray-600 dark:text-gray-300">Industries Served</div>
+                <div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-1">100%</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">On-Time Delivery</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text mb-2">99%</div>
-                  <div className="text-gray-600 dark:text-gray-300">Client Success Rate</div>
+                <div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-1">98%</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Client Retention</div>
+                </div>
+                <div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-1">20+</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Active Integrations</div>
                 </div>
               </div>
             </div>
@@ -202,20 +285,20 @@ const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 px-4 bg-gray-50/50 dark:bg-gray-900/30 relative z-10 border-t border-gray-100 dark:border-gray-800">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="card bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-100 dark:border-blue-800">
-            <h3 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h3>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Let's discuss how we can deliver solutions tailored to your specific business challenges 
-              and help you achieve measurable results.
+          <div className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/5 to-cyan-50/5 dark:from-gray-900 dark:via-blue-900/10 dark:to-cyan-900/10 border border-gray-100 dark:border-gray-800 rounded-3xl p-8 md:p-12 shadow-sm">
+            <h3 className="text-3xl font-extrabold mb-4 text-gray-900 dark:text-white">Ready to streamline your systems?</h3>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+              Schedule a technical consultation with our engineering leads. We'll audit your current workflow 
+              and identify high-impact automation or modernization opportunities.
             </p>
             <button 
               onClick={() => navigate('/contact')}
-              className="btn-primary inline-flex items-center text-lg px-8 py-4 group"
+              className="btn-primary inline-flex items-center text-sm px-6 py-3.5 group relative overflow-hidden"
             >
-              Schedule a Consultation
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" size={24} />
+              <span>Schedule a Consultation</span>
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" size={16} />
             </button>
           </div>
         </div>

@@ -8,9 +8,12 @@ import Services from '../pages/Services';
 import CloudInfrastructure from '../pages/pillars/CloudInfrastructure';
 import IntelligentSystems from '../pages/pillars/IntelligentSystems';
 import ExperienceStudio from '../pages/pillars/ExperienceStudio';
-import GrowthSystems from '../pages/pillars/GrowthSystems';
 import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
+import CookiePolicy from '../pages/CookiePolicy';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfService from '../pages/TermsOfService';
+import CookieConsent from './CookieConsent';
 
 const AppRouter = () => {
   const { currentPath } = useRouter();
@@ -18,6 +21,7 @@ const AppRouter = () => {
   const renderPage = () => {
     switch (currentPath) {
       case '/':
+      case '/home':
         return <Home />;
       case '/about':
         return <About />;
@@ -33,6 +37,12 @@ const AppRouter = () => {
         return <Portfolio />;
       case '/contact':
         return <Contact />;
+      case '/cookie-policy':
+        return <CookiePolicy />;
+      case '/privacy':
+        return <PrivacyPolicy />;
+      case '/terms':
+        return <TermsOfService />;
       default:
         return <Home />;
     }
@@ -45,6 +55,7 @@ const AppRouter = () => {
         {renderPage()}
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };

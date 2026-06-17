@@ -103,9 +103,10 @@ const Footer = () => {
               <li><a href="#/contact" className="hover:text-blue-400 transition-colors duration-200">Contact</a></li>
             </ul>
             
-            <div className="mt-6">
-              <p className="text-gray-400 text-sm">partners@nextmav.com</p>
-              <p className="text-gray-400 text-sm">Abuja, Nigeria</p>
+            <div className="mt-6 space-y-1">
+              <p className="text-gray-400 text-sm">partner@nextmav.com</p>
+              <p className="text-gray-400 text-sm">0902 662 6000</p>
+              <p className="text-gray-400 text-sm">Kaduna State, Nigeria</p>
             </div>
           </div>
         </div>
@@ -118,9 +119,9 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-white hover:text-blue-400 transition-colors duration-200">Cookie Policy</a>
+              <a href="#/privacy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
+              <a href="#/terms" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
+              <a href="#/cookie-policy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cookie Policy</a>
             </div>
           </div>
         </div>

@@ -111,15 +111,14 @@ const About = () => {
               <Eye className="w-12 h-12 text-blue-600 mx-auto mb-6" />
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                To be the technology partner that enables organizations to operate at their full potential through reliable infrastructure, intelligent automation, and data-driven systems that compete on the world stage.
+                To be the definitive digital infrastructure partner that enables growing enterprises to build scalable systems, run autonomous operations, and compete globally at their highest potential.
               </p>
             </div>
             <div className="card text-center hover-lift animate-fade-in-up delay-200">
               <Target className="w-12 h-12 text-blue-600 mx-auto mb-6" />
               <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Empowering ambitious companies with world-class creativity, technology, and intelligence 
-                to scale faster, smarter, and further.
+                To empower ambitious organizations with elite systems engineering, resilient cloud architectures, and intelligent automation that eliminate operational friction and drive sustainable technical advantage.
               </p>
             </div>
           </div>

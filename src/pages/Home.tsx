@@ -5,42 +5,11 @@ import { useRouter } from '../utils/router';
 const Home = () => {
   const { navigate } = useRouter();
 
-  const partners = [
-    {
-      name: 'Microsoft',
-      logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Strategic'
-    },
-    {
-      name: 'Google Cloud',
-      logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Strategic'
-    },
-    {
-      name: 'Amazon AWS',
-      logo: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Strategic'
-    },
-    {
-      name: 'Salesforce',
-      logo: 'https://images.unsplash.com/photo-1496096265110-f83ad7f96608?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Technology'
-    },
-    {
-      name: 'Adobe',
-      logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Technology'
-    },
-    {
-      name: 'Adobe',
-      logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Technology'
-    },
-    {
-      name: 'IBM',
-      logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&h=100&q=80',
-      tier: 'Technology'
-    },
+  const partnerLogos = [
+    { name: 'Amazon AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
+    { name: 'Google Cloud', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg' },
+    { name: 'Zoho', logo: '/zoho.svg' },
+    { name: 'Stunmark', logo: '/stunmark.png' }
   ];
 
   const achievements = [
@@ -361,8 +330,8 @@ const Home = () => {
                   <Target className="w-8 h-8 text-blue-600 mr-3" />
                   <h3 className="text-3xl font-bold">Our Mission</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-lg">
-                  To enable organizations at any growth stage to build reliable, scalable systems that drive competitive advantage.
+                <p className="text-gray-600 dark:text-gray-300 text-lg font-normal">
+                  To empower ambitious organizations with elite systems engineering, resilient cloud architectures, and intelligent automation that eliminate operational friction and drive sustainable technical advantage.
                 </p>
               </div>
 
@@ -371,8 +340,8 @@ const Home = () => {
                   <Eye className="w-8 h-8 text-blue-600 mr-3" />
                   <h3 className="text-3xl font-bold">Our Vision</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 text-lg">
-                  To be the technology partner that enables organizations to build scalable systems, automate operations, and compete at their highest potential from ambitious startups to global organizations.
+                <p className="text-gray-600 dark:text-gray-300 text-lg font-normal">
+                  To be the definitive digital infrastructure partner that enables growing enterprises to build scalable systems, run autonomous operations, and compete globally at their highest potential.
                 </p>
               </div>
             </div>
@@ -433,7 +402,7 @@ const Home = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 px-4 bg-white dark:bg-gray-900 relative overflow-hidden">
+      <section className="py-20 px-4 bg-transparent relative overflow-hidden">
         {/* Premium background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-100/20 to-cyan-100/20 rounded-full blur-3xl"></div>
@@ -441,41 +410,45 @@ const Home = () => {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-full text-blue-700 dark:text-blue-300 text-sm font-medium mb-6">
-              <Star className="w-4 h-4 mr-2" />
-              Elite Partnership Network
-            </div>
-            <h2 className="section-title">Trusted by Global Leaders</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              We maintain exclusive partnerships with the world's most innovative technology companies, 
-              ensuring our clients receive cutting-edge solutions and unparalleled support.
+          <div className="text-center mb-12">
+            <h2 className="section-title">Trusted Technology Partners</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              We leverage industry-leading platforms and technology ecosystems to deliver secure, scalable, and future-ready solutions.
             </p>
           </div>
 
-          {/* Professional partner logo stripe */}
-          <div className="mb-20">
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12">
-              {[
-                { name: 'Microsoft', logo: 'https://images.unsplash.com/photo-1633356122544-f134324ef6e6?auto=format&fit=crop&w=300&q=80' },
-                { name: 'Google Cloud', logo: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=300&q=80' },
-                { name: 'Amazon AWS', logo: 'https://images.unsplash.com/photo-1634942537034-9c89d0d5b1d9?auto=format&fit=crop&w=300&q=80' },
-                { name: 'Salesforce', logo: 'https://images.unsplash.com/photo-1633356122544-f134324ef6e6?auto=format&fit=crop&w=300&q=80' },
-                { name: 'Adobe', logo: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=300&q=80' },
-                { name: 'IBM', logo: 'https://images.unsplash.com/photo-1634942537034-9c89d0d5b1d9?auto=format&fit=crop&w=300&q=80' }
-              ].map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center group transition-all duration-300 hover:scale-110"
-                >
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    title={partner.name}
-                    className="max-h-12 lg:max-h-14 max-w-full w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                  />
-                </div>
-              ))}
+          {/* Animated partner logo marquee */}
+          <div className="relative w-full overflow-hidden py-12 mb-16">
+            {/* Soft fade effect on left and right edges */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-gray-50 via-gray-50/70 to-transparent dark:from-gray-900 dark:via-gray-900/70 to-transparent z-10"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-gray-50 via-gray-50/70 to-transparent dark:from-gray-900 dark:via-gray-900/70 to-transparent z-10"></div>
+
+            {/* Marquee Track container */}
+            <div className="flex w-max overflow-hidden hover-pause">
+              <div className="flex shrink-0 items-center gap-16 md:gap-24 pr-16 md:pr-24 animate-marquee">
+                {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((partner, idx) => (
+                  <div key={`set1-${idx}`} className="flex h-12 w-32 md:w-36 items-center justify-center">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      title={partner.name}
+                      className={`w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 hover:scale-105 ${partner.name === 'Stunmark' ? 'max-h-10 md:max-h-12 dark:invert-0 invert' : partner.name === 'Zoho' ? 'max-h-[35px] md:max-h-[42px]' : 'max-h-8 md:max-h-10'}`}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex shrink-0 items-center gap-16 md:gap-24 pr-16 md:pr-24 animate-marquee" aria-hidden="true">
+                {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((partner, idx) => (
+                  <div key={`set2-${idx}`} className="flex h-12 w-32 md:w-36 items-center justify-center">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      title={partner.name}
+                      className={`w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 hover:scale-105 ${partner.name === 'Stunmark' ? 'max-h-10 md:max-h-12 dark:invert-0 invert' : partner.name === 'Zoho' ? 'max-h-[35px] md:max-h-[42px]' : 'max-h-8 md:max-h-10'}`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

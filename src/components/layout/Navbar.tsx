@@ -20,9 +20,16 @@ const Navbar = () => {
           <div className="flex items-center">
             <button 
               onClick={() => handleNavigation('/')}
-              className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-200"
+              className="flex items-center gap-2.5 hover:scale-105 transition-all duration-200"
             >
-              NextMav
+              <img 
+                src="/nextmav-logo.png" 
+                alt="NextMav Logo" 
+                className="h-8 w-auto object-contain dark:brightness-110" 
+              />
+              <span className="text-2xl font-bold gradient-text">
+                NextMav
+              </span>
             </button>
           </div>
 
