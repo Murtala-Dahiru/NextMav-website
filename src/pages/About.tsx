@@ -26,9 +26,10 @@ const About = () => {
   ];
 
   const differentiators = [
-    'We combine cloud infrastructure, intelligent automation, and systems integration in one firm.',
-    'We engineer systems that scale, not short-term fixes.',
-    'We operate with the speed of startups and the rigor of global technology consultancies.',
+    'We design and implement scalable digital infrastructure that supports long-term growth.',
+    'We combine platform engineering, fintech integration, and technology operations within a single partner ecosystem.',
+    'We focus on building connected systems that improve efficiency, reliability, and business performance.',
+    'We deliver practical technology solutions with the agility of modern startups and the discipline of established consultancies.',
   ];
 
   const teamExpertise = [
@@ -219,12 +220,16 @@ const About = () => {
             <div className="animate-fade-in-up">
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Founded with a vision to position Africa as a hub for global innovation, NextMav was built on the belief 
-                that great brands and systems should not only compete   they should dominate.
+                NextMav was founded with a vision to help businesses build, connect, and scale through modern technology infrastructure.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                As organizations increasingly rely on digital systems to operate and grow, we recognized the need for a partner that could bridge strategy, engineering, financial technology, and operational excellence under one roof.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                Today, NextMav delivers digital infrastructure, financial systems integration, platform engineering, and technology operations solutions that help businesses operate more efficiently, scale with confidence, and prepare for the future.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                From Lagos to global markets, our team blends strategy, design, technology, and marketing 
-                to deliver world-class solutions with local insight.
+                Our approach combines technical expertise, practical execution, and long-term thinking to create systems that drive measurable business value.
               </p>
             </div>
             <div className="space-y-6 animate-fade-in-up delay-200">
@@ -250,9 +255,9 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { icon: Users, label: 'Industries Served', value: '10+' },
-              { icon: TrendingUp, label: 'Revenue Impact', value: '$2M+' },
-              { icon: Zap, label: 'Automated Processes', value: '40+' },
-              { icon: BarChart, label: 'Campaign Impressions', value: '200K+' },
+              { icon: Globe, label: 'Integrations Implemented', value: '20+' },
+              { icon: Zap, label: 'Digital Workflows Automated', value: '10+' },
+              { icon: Award, label: 'Technology Projects Completed', value: '50+' },
             ].map((stat, index) => (
               <div key={index} className="card text-center group hover:scale-105 transition-transform duration-300 animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
                 <stat.icon className="w-8 h-8 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
