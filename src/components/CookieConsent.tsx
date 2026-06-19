@@ -98,7 +98,7 @@ const CookieConsent = () => {
             <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mt-2">
               NextMav uses cookies to verify session security, analyze platform performance, and optimize custom settings. 
               Review cookies and select your preferences. Learn more in our{' '}
-              <a href="#/cookie-policy" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+              <a href="/cookie-policy" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
                 Cookie Policy
               </a>.
             </p>

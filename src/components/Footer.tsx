@@ -76,10 +76,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Strategy & Architecture</a></li>
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Platform Engineering & DevOps</a></li>
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI Strategy & Implementation</a></li>
-              <li><a href="#/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Systems Integration</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Strategy & Architecture</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Platform Engineering & DevOps</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI Strategy & Implementation</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Systems Integration</a></li>
             </ul>
           </div>
 
@@ -87,9 +87,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Core Areas</h4>
             <ul className="space-y-3">
-              <li><a href="#/divisions/cloud-infrastructure-excellence" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Excellence</a></li>
-              <li><a href="#/divisions/ai-data-intelligent-operations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI & Data</a></li>
-              <li><a href="#/divisions/digital-infrastructure-technology-solutions" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Digital Infrastructure & Technology Solutions</a></li>
+              <li><a href="/divisions/cloud-infrastructure-excellence" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cloud Excellence</a></li>
+              <li><a href="/divisions/ai-data-intelligent-operations" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">AI & Data</a></li>
+              <li><a href="/divisions/digital-infrastructure-technology-solutions" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Digital Infrastructure & Technology Solutions</a></li>
             </ul>
           </div>
 
@@ -97,9 +97,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Company</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#/about" className="hover:text-blue-400 transition-colors duration-200">About Us</a></li>
-              <li><a href="#/portfolio" className="hover:text-blue-400 transition-colors duration-200">Portfolio</a></li>
-              <li><a href="#/contact" className="hover:text-blue-400 transition-colors duration-200">Contact</a></li>
+              <li><a href="/about" className="hover:text-blue-400 transition-colors duration-200">About Us</a></li>
+              <li><a href="/portfolio" className="hover:text-blue-400 transition-colors duration-200">Portfolio</a></li>
+              <li><a href="/contact" className="hover:text-blue-400 transition-colors duration-200">Contact</a></li>
             </ul>
             
             <div className="mt-6 space-y-1">
@@ -118,9 +118,9 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <a href="#/privacy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
-              <a href="#/terms" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
-              <a href="#/cookie-policy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cookie Policy</a>
+              <a href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Privacy Policy</a>
+              <a href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
+              <a href="/cookie-policy" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cookie Policy</a>
             </div>
           </div>
         </div>

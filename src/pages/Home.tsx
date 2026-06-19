@@ -296,7 +296,7 @@ const Home = () => {
                   ))}
                 </div>
                 <a
-                  href={`#${pillar.link}`}
+                  href={pillar.link}
                   className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/40 active:scale-95 transition-all duration-200"
                 >
                   Learn More <ArrowRight className="w-4 h-4 transition-transform duration-200" />
