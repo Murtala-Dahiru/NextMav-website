@@ -104,7 +104,7 @@ const Footer = () => {
             
             <div className="mt-6 space-y-1">
               <p className="text-gray-400 text-sm">partner@nextmav.com</p>
-              <p className="text-gray-400 text-sm">0902 662 6000</p>
+              <p className="text-gray-400 text-sm">+234 902 662 6000</p>
               <p className="text-gray-400 text-sm">Kaduna State, Nigeria</p>
             </div>
           </div>
